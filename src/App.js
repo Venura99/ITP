@@ -8,9 +8,7 @@ function App() {
       <div className="container">
         <Navbar />
         <br />
-        <br>
-          <button></button>
-        </br>
+
       </div>
     </Router>
   );
