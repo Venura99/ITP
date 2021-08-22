@@ -24,7 +24,7 @@ export const SidebarData = [
     },
     {
         title: 'Staff',
-        path: '/',
+        path: '/manageStaff',
         icon: <ImIcons.ImUsers />,
         cName: 'nav-text'
     },
