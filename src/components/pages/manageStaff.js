@@ -26,7 +26,7 @@ function ManageStaff() {
                     <ManageStaffCard>
                         <ManageStaffH2>VIEW EMPLOYEE</ManageStaffH2>
                         <ManageStaffIcon src={viewEmp} />
-                        <h4><NavLink to='/addStaff'>Continue</NavLink></h4>
+                        <h4><NavLink to='/viewStaff'>Continue</NavLink></h4>
 
                     </ManageStaffCard>
                     <ManageStaffCard>
