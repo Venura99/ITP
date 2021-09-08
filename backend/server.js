@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-
 require('dotenv').config();
+
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -23,6 +23,7 @@ const salaryRouter = require('./routes/salary');
 
 app.use('/staff', staffRouter);
 app.use('/salary', salaryRouter);
+app.use('/users', require('./routes/auth'));
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

@@ -16,8 +16,8 @@ const salarySchema = new Schema({
         unique: true,
         trim: true
     },
-    month: {
-        type: String,
+    date: {
+        type: Date,
         required: true
     },
     basicSalary: {

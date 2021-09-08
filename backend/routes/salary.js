@@ -13,7 +13,7 @@ router.route('/').get((req, res) => {
 router.route('/add').post((req, res) => {
     const _id = req.body._id;
     const name = req.body.name;
-    const month = req.body.month;
+    const date = Date.parse(req.body.date);;
     const basicSalary = req.body.basicSalary;
     const noOfDays = req.body.noOfDays;
     const chanellingFee = req.body.chanellingFee;
@@ -24,7 +24,7 @@ router.route('/add').post((req, res) => {
 
         _id,
         name,
-        month,
+        date,
         basicSalary,
         noOfDays,
         chanellingFee,
@@ -58,7 +58,7 @@ router.route('/update/:id').post((req, res) => {
         .then(salary => {
             salary._id = req.body._id;
             salary.name = req.body.name;
-            salary.month = req.body.month;
+            salary.date = Date.parse(req.body.date);
             salary.basicSalary = req.body.basicSalary;
             salary.noOfDays = req.body.noOfDays;
             salary.chanellingFee = req.body.chanellingFee;

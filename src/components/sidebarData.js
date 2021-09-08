@@ -57,5 +57,5 @@ export const SidebarData = [
         path: '/',
         icon: <AiIcons.AiOutlineDollarCircle />,
         cName: 'nav-text'
-    }
+    },
 ];

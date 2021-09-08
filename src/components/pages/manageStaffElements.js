@@ -4,7 +4,7 @@ export const ManageStaffContainer = styled.div`
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     background: #e6ccff;
 

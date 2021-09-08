@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './manageStaff.css';
-import AddStaff from './addStaff';
 import addEmp from '../../images/addEmp.png';
 import viewEmp from '../../images/viewEmp.jpg';
 import generateEmp from '../../images/generateEmp.jpg';
@@ -32,13 +31,13 @@ function ManageStaff() {
                     <ManageStaffCard>
                         <ManageStaffH2>CALULATE EMPLOYEE SALARY</ManageStaffH2>
                         <ManageStaffIcon src={calcEmp} />
-                        <h4><NavLink to='/addStaff'>Continue</NavLink></h4>
+                        <h4><NavLink to='/calcSalary'>Continue</NavLink></h4>
 
                     </ManageStaffCard>
                     <ManageStaffCard>
                         <ManageStaffH2>GENERATE EMPLOYEE REPORT</ManageStaffH2>
                         <ManageStaffIcon src={generateEmp} />
-                        <h4><NavLink to='/addStaff'>Continue</NavLink></h4>
+                        <h4><NavLink to='/empReport'>Continue</NavLink></h4>
 
                     </ManageStaffCard>
                 </ManageStaffWrapper>

@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import './staff.css';
 
 const Staff = props => (
     <tr>
@@ -18,6 +19,7 @@ const Staff = props => (
         </td>
     </tr>
 )
+
 
 export default class ViewStaff extends Component {
     constructor(props) {
@@ -54,27 +56,32 @@ export default class ViewStaff extends Component {
     }
 
 
+
     render() {
         return (
-            <div>
-                <h3>Hospital Staff</h3>
-                <table className="table">
-                    <thead className="thead-light">
-                        <tr>
-                            <th>Staff ID</th>
-                            <th>Name</th>
-                            <th>NIC</th>
-                            <th>Gender</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Username</th>
-                            <th>Password</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {this.staffMembersList()}
-                    </tbody>
-                </table>
+            <div className='viewstaff'>
+                <Link to="/fetchStaff" className="btn btn-primary">Serach Staff</Link>
+                <div className='container'>
+                    <h3>Hospital Staff</h3>
+                    <br /><br />
+                    <table className="table">
+                        <thead className="thead-light">
+                            <tr>
+                                <th>Staff ID</th>
+                                <th>Name</th>
+                                <th>NIC</th>
+                                <th>Gender</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                                <th>Username</th>
+                                <th>Password</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.staffMembersList()}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         )
     }

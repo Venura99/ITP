@@ -1,12 +1,12 @@
-import React from 'react'
-import './home.css';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import homeImage from '../../images/hospitalBg2.PNG'
 import Icon1 from '../../images/homeChannelDoctor.jpg';
-import Icon2 from '../../images/homeLaboratory.jpg';
-import Icon3 from '../../images/homeRadiology.jpg';
+import Icon2 from '../../images/homeAddPateint.jpg';
+import Icon3 from '../../images/homeAddStaff.jpg';
 import { QuickLinksContainer, QuickLinksWrapper, QuickLinksCard, QuickLinksH2 } from './homeQLinksElements'
 import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2 } from './homeServicesElements'
+import { Nav } from 'react-bootstrap';
 
 function Home() {
     return (
@@ -20,11 +20,11 @@ function Home() {
                         <QuickLinksWrapper>
                             <QuickLinksCard>
                                 <QuickLinksH2>Emergency?</QuickLinksH2>
-                                <button className='homeBtn1'>CALL AN AMBULANCE</button>
+                                <button className='homeBtn1'>SEND AN AMBULANCE</button>
                             </QuickLinksCard>
 
                             <QuickLinksCard>
-                                <QuickLinksH2>Protect yourself against covid-19</QuickLinksH2>
+                                <QuickLinksH2>Covid-19</QuickLinksH2>
                                 <button className='homeBtn1'>REGISTER FOR COVID-19 VACCINE</button>
                             </QuickLinksCard>
                         </QuickLinksWrapper>
@@ -32,7 +32,7 @@ function Home() {
                 </div>
                 <div className='homeServices'>
                     <ServicesContainer id='services'>
-                        <ServicesH1>OUR SERVICES</ServicesH1>
+                        <ServicesH1>QUICK LINKS</ServicesH1>
                         <ServicesWrapper>
                             <ServicesCard>
                                 <ServicesH2>Channel a Doctor</ServicesH2>
@@ -41,15 +41,15 @@ function Home() {
                             </ServicesCard>
 
                             <ServicesCard>
-                                <ServicesH2>Laboratory Services</ServicesH2>
+                                <ServicesH2>Admit Patient</ServicesH2>
                                 <ServicesIcon src={Icon2} />
                                 <h4><NavLink to='/'>View</NavLink></h4>
                             </ServicesCard>
 
                             <ServicesCard>
-                                <ServicesH2>Radiology and Imaging Services</ServicesH2>
+                                <ServicesH2>Add a New Employee</ServicesH2>
                                 <ServicesIcon src={Icon3} />
-                                <h4><NavLink to='/'>View</NavLink></h4>
+                                <h4><NavLink to='/addStaff'>View</NavLink></h4>
                             </ServicesCard>
                         </ServicesWrapper>
                     </ServicesContainer>
