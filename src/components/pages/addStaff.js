@@ -95,7 +95,6 @@ export default class AddStaff extends Component {
         axios.post('http://localhost:5000/staff/add', staff)
             .then(res => console.log(res.data));
 
-        alert("New Staff Member Added!");
         window.location = '/addStaff';
 
     }

@@ -4,8 +4,8 @@ import { Link, Redirect } from "react-router-dom";
 
 const Salary = props => (
     <tr>
-        <td>{props.salary.name}</td>
         <td>{props.salary.date}</td>
+        <td>{props.salary.name}</td>
         <td>{props.salary.basicSalary}</td>
         <td>{props.salary.noOfDays}</td>
         <td>{props.salary.chanellingFee}</td>
@@ -61,8 +61,8 @@ export default class ViewSalary extends Component {
                     <table className="table">
                         <thead className="thead-light">
                             <tr>
-                                <th>Name</th>
                                 <th>Date</th>
+                                <th>Name</th>
                                 <th>Basic Salary</th>
                                 <th>Worked For</th>
                                 <th>Chanelling Fee</th>

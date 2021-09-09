@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link, Redirect } from "react-router-dom";
 import DatePicker from "react-datepicker";
 
+
 import "react-datepicker/dist/react-datepicker.css";
 
 export default class CalcSalary extends Component {
@@ -99,19 +100,29 @@ export default class CalcSalary extends Component {
             .then(res => console.log(res.data));
 
         alert("Salary Entry Added!");
-        window.location = '/calcSalary';
+        window.location = '/calcSalary'
     }
-
-    displaySalary = value => () => {
-        console.log(value);
-    };
 
 
     render() {
         return (
-            <div className='container'>
+
+            <div className="calcSalaryPage">
+                <br />
+                <Link to="/viewSalary">View All Salary Details</Link>
+                <br />
                 <h3>EMPLOYEE SALARY CALCULATION</h3>
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit} className="container">
+                    <div className="form-group">
+                        <label>Date: </label>
+                        <div>
+                            <DatePicker
+                                selected={this.state.date}
+                                onChange={this.onChangeDate}
+                            />
+                        </div>
+                        <br />
+                    </div>
                     <div className="form-group">
                         <label>Employee ID: </label>
                         <input type="text"
@@ -130,15 +141,7 @@ export default class CalcSalary extends Component {
                             onChange={this.onChangeName}
                         />
                     </div>
-                    <div className="form-group">
-                        <label>Date: </label>
-                        <div>
-                            <DatePicker
-                                selected={this.state.date}
-                                onChange={this.onChangeDate}
-                            />
-                        </div>
-                    </div>
+
                     <div className="form-group">
                         <label>Basic Salary: </label>
                         <input type="text"
@@ -175,24 +178,26 @@ export default class CalcSalary extends Component {
                             onChange={this.onChangeNoOfAppointments}
                         />
                     </div>
-                    <div className="form-group">
-                        <label>Total Salary: </label>
+                    <label>Total Salary: </label>
+                    <div>
                         <input
                             type="text"
                             className="form-control"
-                            value={this.state.totalSalary}
-                            onChange={this.onChangeTotalSalary}
+                            value={((this.state.basicSalary * this.state.noOfDays) + (this.state.chanellingFee * this.state.noOfAppointments))}
+                            onClick={this.getTotal}
                         />
                     </div>
-
                     <br />
                     <div className="form-group">
-                        <input type="submit" value="Calculate Salary" className="btn btn-primary" />
+                        <input type="submit" value="Add to Database" className="btn btn-primary" onClick={this.getTotal} />
                         <br />
 
                     </div>
                 </form>
-                <Link to="/viewSalary" className="btn btn-primary">View Salary</Link>
+
+
+
+
                 <br />
             </div>
 

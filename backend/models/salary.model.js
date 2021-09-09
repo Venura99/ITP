@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+var Sequelize = require('sequelize');
 
 const Schema = mongoose.Schema;
 
