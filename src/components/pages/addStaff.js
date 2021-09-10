@@ -102,8 +102,8 @@ export default class AddStaff extends Component {
 
     render() {
         return (
-            <div className='addStaff'>
-                <div className='container'>
+            <div className='addStaffPage'>
+                <div className='container' id="addStaffForm">
                     <h3>ADD NEW STAFF MEMBER</h3>
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">

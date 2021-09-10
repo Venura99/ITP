@@ -9,7 +9,7 @@ import ViewStaff from './components/pages/viewStaff';
 import EditStaff from './components/pages/editStaff';
 import CalcSalary from './components/pages/calcSalary';
 import ViewSalary from './components/pages/viewSalary';
-
+import SearchStaff from './components/pages/seachStaff'
 import Dashboard from "./components/Dashboard";
 import NavMain from "./components/layout/NavMain";
 import Landing from "./components/layout/Landing";
@@ -46,6 +46,7 @@ function App() {
               <Route path='/manageStaff' component={ManageStaff} />
               <Route path='/addStaff' component={AddStaff} />
               <Route path='/viewStaff' component={ViewStaff} />
+              <Route path='/searchStaff' component={SearchStaff} />
               <Route path='/calcSalary' component={CalcSalary} />
               <Route path='/viewSalary' component={ViewSalary} />
               <Route path='/editStaff/:id' component={EditStaff} />

@@ -1,6 +1,8 @@
-.manageStaff{
-    background-color: #cc99ff;
-    background-size: cover;
+.manageStaffPage{
+	background: url("https://smith.queensu.ca/insight/images/webinar-healthcare_1546x656.jpg") no-repeat center center fixed;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h3{

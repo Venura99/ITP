@@ -6,7 +6,10 @@ export const ManageStaffContainer = styled.div`
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    background: #e6ccff;
+    background: url("https://www.teahub.io/photos/full/164-1643331_purple-background-free-download.jpg") no-repeat center center fixed;
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
     @media screen and (max-width: 768px){
         height: 1100px;
@@ -42,7 +45,8 @@ export const ManageStaffCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-width: 300px;
+    max-height: 370px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0,2);
     transition: all 0.2s ease-in-out;
@@ -71,6 +75,7 @@ export const ManageStaffH1 = styled.h1`
 `
 
 export const ManageStaffH2 = styled.h2`
+    font-weight:bold,
     font-size: 1rem;
     margin-bottom: 10px;
 `

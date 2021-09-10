@@ -10,10 +10,9 @@ import { ManageStaffContainer, ManageStaffH1, ManageStaffWrapper, ManageStaffCar
 
 function ManageStaff() {
     return (
-        <div className="manageStaff">
+        <div >
             <h3>HOSPITAL STAFF MANAGEMENT</h3>
-
-            <ManageStaffContainer id='manageStaff'>
+            <ManageStaffContainer className="manageStaffPage" id='manageStaff'>
                 <ManageStaffH1>Select task to continue</ManageStaffH1>
                 <ManageStaffWrapper>
                     <ManageStaffCard>

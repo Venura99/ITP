@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './staff.css';
@@ -59,9 +59,11 @@ export default class ViewStaff extends Component {
 
     render() {
         return (
-            <div className='viewstaff'>
-                <Link to="/fetchStaff" className="btn btn-primary">Serach Staff</Link>
-                <div className='container'>
+            <div className='viewStaffPage'>
+                <br />
+                <Link to="/searchStaff" className="btn btn-primary" id="btns">Search Staff</Link>
+                <br /><br />
+                <div className='container' id="viewStaffForm">
                     <h3>Hospital Staff</h3>
                     <br /><br />
                     <table className="table">
