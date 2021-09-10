@@ -1,0 +1,33 @@
+.covidManage{
+    background-color: #2c065e;
+    background-size: cover;
+}
+
+h3{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    font-size: 3rem;
+}
+  
+p{
+    font-size: 25px;
+}
+
+.covidManage1{
+    color: #fff;
+}
+.covidManage2{
+    color: #fff;
+}
+.covidManage3{
+    color: #fff;
+}
+.covidManage4{
+    color: #fff;
+}
+
+
+h4{
+    color: rgb(246, 250, 6);
+}
