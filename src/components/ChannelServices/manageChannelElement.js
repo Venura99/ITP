@@ -68,4 +68,6 @@ export const ManageChannelH1 = styled.h1`
 export const ManageChannelH2 = styled.h2`
     font-size: 20px;
     margin-bottom: 10px;
+    color:#006400;
+    font-weight:bold;
 `

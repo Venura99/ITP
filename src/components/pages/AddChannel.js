@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-//import './Add.css';
+import './AddChnel.css';
 
 export default class AddChannel extends Component {
   constructor(props) {
@@ -116,7 +116,7 @@ export default class AddChannel extends Component {
     return (
       <div className="AddChnnelpg"><br />
         <form onSubmit={this.onSubmit} className="container" id="Addform">
-          <h4>ADD NEW APPOINTMENT</h4>
+          <h4 className="Addappoi">ADD NEW APPOINTMENT</h4>
           <div className="form-group" >
             <label>Channel No: </label>
             <input type="text"
@@ -165,7 +165,7 @@ export default class AddChannel extends Component {
             />
           </div><br />
           <div className="form-group">
-            <label>Doctor Name: </label>
+            <label>Doctor Name:</label>
             <input
               type="text"
               className="form-control"
@@ -173,7 +173,8 @@ export default class AddChannel extends Component {
               placeholder="Enter doctor name"
               value={this.state.DoctorName}
               onChange={this.onChangeDoctorName}
-            />
+            /> 
+            
           </div><br />
           <div className="form-group">
             <label>date: </label>
@@ -218,7 +219,7 @@ export default class AddChannel extends Component {
           </div><br />
           <div className="form-group">
             <div class="col text-center">
-              <input type="submit" value="ADD APPOINTMENT" className="btn btn-primary" id="b1" />
+              <input type="submit" value="ADD APPOINTMENT" className="btn btn-primary" id="ba1" />
             </div>
           </div><br />
 
