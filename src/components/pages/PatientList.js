@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-//import './patient.css';
+import './patient.css';
 
 const Patient = props => (
   <tr>
@@ -15,7 +15,7 @@ const Patient = props => (
 
 
     <td>
-      <Link to={"/editPatient/" + props.patient._id}>VIEW</Link>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" id="b6" onClick={() => { props.deletepatient(props.patient._id) }}>DELETE</a>
+      <Link to={"/editPatient/" + props.patient._id}>VIEW</Link>&nbsp;&nbsp; | &nbsp;&nbsp;<a href="#" id="linkButton" onClick={() => { props.deletepatient(props.patient._id) }}>DELETE</a>
     </td>
 
   </tr>
@@ -61,8 +61,7 @@ export default class PatientList extends Component {
     return (
       <div className="PatientList">
 
-
-        <h2>Patient List</h2><br></br><br></br>
+        <h2 className="admitPatientTitle">Patient List</h2><br></br><br></br>
         <table className="table" className="container">
 
           <tr>

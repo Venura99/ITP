@@ -11,7 +11,7 @@ const Charge = props => (
         <td>{props.charge.noOfDays}</td>
         <td>{props.charge.totalCharge}</td>
         <td>
-            <a href="#" id="b6" onClick={() => { props.deleteCharge(props.charge._id) }}><b>DELETE</b></a>
+            <a href="#" id="linkButton" onClick={() => { props.deleteCharge(props.charge._id) }}><b>DELETE</b></a>
         </td>
     </tr>
 )
@@ -54,7 +54,7 @@ export default class ViewCharge extends Component {
     render() {
         return (
             <div className='PatientList'>
-                <h2>Patient Charge Details</h2>
+                <h2 className="admitPatientTitle">Patient Charge Details</h2>
                 <br></br><br></br>
                 <table className="table" className="container">
                     <tr>

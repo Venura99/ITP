@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-//import './patient.css';
+import './patient.css';
 
 
 export default class AdmitPatient extends Component {
@@ -113,9 +113,7 @@ export default class AdmitPatient extends Component {
       roomward: this.state.roomward,
       roomwardno: this.state.roomwardno,
       dateofadmit: this.state.dateofadmit
-
     }
-
 
     console.log(patient);
 
@@ -134,7 +132,7 @@ export default class AdmitPatient extends Component {
 
       <div className="AdmitPatient">
 
-        <h2>PATIENT REGISTRATION</h2><br></br>
+        <h2 className="admitPatientTitle">PATIENT REGISTRATION</h2><br></br>
         <form onSubmit={this.onSubmit} className="container" >
           <div class="form-addselect">
             <label><b>Patient Type: </b>&nbsp;&nbsp; &nbsp;&nbsp;</label>
@@ -145,7 +143,7 @@ export default class AdmitPatient extends Component {
             </select>
           </div>
 
-          <div className="form-group">
+          <div className="form-groupPatient">
             <label><b>Patient Name: </b></label>
             <input type="text"
               required
@@ -157,7 +155,6 @@ export default class AdmitPatient extends Component {
             /><br></br>
           </div>
 
-
           <div class="form-addselect">
             <label><b>Gender: </b>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</label>
             <select required value={this.state.gender} onChange={this.onChangeGender} >
@@ -167,7 +164,7 @@ export default class AdmitPatient extends Component {
             </select>
           </div>
 
-          <div className="form-group">
+          <div className="form-groupPatient">
             <label><b>NIC: </b></label>
             <input type="text"
               required
@@ -179,7 +176,7 @@ export default class AdmitPatient extends Component {
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-groupPatient">
             <label><b>Mobile No: </b></label>
             <input type="text"
               required
@@ -192,7 +189,7 @@ export default class AdmitPatient extends Component {
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-groupPatient">
             <label><b>E-mail: </b></label>
             <input type="text"
               required
@@ -204,7 +201,7 @@ export default class AdmitPatient extends Component {
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-groupPatient">
             <label><b>Disease: </b></label>
             <input type="text"
               required
@@ -234,7 +231,7 @@ export default class AdmitPatient extends Component {
             </select><br></br><br></br>
           </div>
 
-          <div className="form-group">
+          <div className="form-groupPatient">
             <label><b>Date Of Admit: </b></label>
             <div>
               <DatePicker
@@ -244,16 +241,12 @@ export default class AdmitPatient extends Component {
             </div><br></br><br></br>
 
             <div className="form">
-              <input type="submit" value="ADD PATIENT" className="btn btn-primary" id="b1" />
+              <input type="submit" value="ADD PATIENT" className="btn btn-primary" id="badd" />
             </div>
           </div>
 
-
-
-
         </form>
       </div>
-
 
     )
   }

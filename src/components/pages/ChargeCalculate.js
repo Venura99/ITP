@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import "react-datepicker/dist/react-datepicker.css";
-//import './patient.css';
+import './patient.css';
 
 
 export default class ChargeCalculate extends Component {
@@ -94,7 +94,7 @@ export default class ChargeCalculate extends Component {
         <form onSubmit={this.onSubmit}>
 
           <div className="form-calculation">
-            <h5>PATIENT CHARGE CALCULATION</h5><br></br><br></br>
+            <h5 className= "patientCharge">PATIENT CHARGE CALCULATION</h5><br></br><br></br>
             <label><b>Patient Name: </b></label>
             <input type="text"
               required
@@ -174,11 +174,11 @@ export default class ChargeCalculate extends Component {
           <br></br><br></br>
 
           <div className="form-btn">
-            <input type="submit" value="ADD ENTRY TO DATABASE" className="btn btn-primary" id="b2" onClick={this.getTotal} />
+            <input type="submit" value="ADD ENTRY TO DATABASE" className="btn btn-primary" id="bchargecal" onClick={this.getTotal} />
           </div>
 
           <div className="form-btn">
-            <input type="submit" value="GENERATE REPORT" className="btn btn-primary" id="b3" onClick={this.getTotal} /><br></br>
+            <input type="submit" value="GENERATE REPORT" className="btn btn-primary" id="bdatabase" onClick={this.getTotal} /><br></br>
           </div>
 
         </form>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import './patient.css';
 
 export default class EditPatient extends Component {
   constructor(props) {
@@ -143,7 +144,7 @@ export default class EditPatient extends Component {
   render() {
     return (
       <div className="EditPatient">
-        <h2>PATIENT DETAILS</h2><br></br>
+        <h2 className="admitPatientTitle">PATIENT DETAILS</h2><br></br>
         <form onSubmit={this.onSubmit}>
 
           <div class="form-editselect">
@@ -251,7 +252,7 @@ export default class EditPatient extends Component {
           </div>
           
           <div className="form-edit">
-            <input type="submit" value="UPDATE PATIENT DETAILS" className="btn btn-primary" id="b0"/>
+            <input type="submit" value="UPDATE PATIENT DETAILS" className="btn btn-primary" id="bedit"/>
           </div>
 
         </form>
