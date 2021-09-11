@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-
 require('dotenv').config();
+
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -21,8 +21,37 @@ connection.once('open', () => {
 const staffRouter = require('./routes/staff');
 const salaryRouter = require('./routes/salary');
 
+const channelRouter = require('./routes/Channeling');
+
+const patientRouter = require('./routes/patient');
+const chargeRouter = require('./routes/charge');
+
+const registerRouter = require('./routes/register');
+const tfeeRouter = require('./routes/tfee');
+
+const labRouter = require('./routes/lab');
+const costRouter = require('./routes/cost');
+
+const madicinesRouter = require('./routes/madicines');
+
+
 app.use('/staff', staffRouter);
 app.use('/salary', salaryRouter);
+
+app.use('/Channeling', channelRouter);
+
+app.use('/patient', patientRouter);
+app.use('/charge', chargeRouter);
+
+app.use('/lab', labRouter);
+app.use('/cost', costRouter);
+
+app.use('/register', registerRouter);
+app.use('/tfee', tfeeRouter);
+
+
+app.use('/madicines', madicinesRouter);
+app.use('/users', require('./routes/auth'));
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);

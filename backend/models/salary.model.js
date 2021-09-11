@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+var Sequelize = require('sequelize');
 
 const Schema = mongoose.Schema;
 
@@ -16,8 +17,8 @@ const salarySchema = new Schema({
         unique: true,
         trim: true
     },
-    month: {
-        type: String,
+    date: {
+        type: Date,
         required: true
     },
     basicSalary: {

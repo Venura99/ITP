@@ -1,0 +1,62 @@
+.detailsBox
+{
+    position:absolute;
+    top:12%;
+    left:10%;
+   
+    width:1050px;
+    height:920px;
+    padding:80px 40px;
+    box-sizing:border-box;
+    background:rgba(0,0,0,.5);
+}
+body{
+
+  
+    padding: 0;
+    background: url(../images/n.jpg);
+    min-height: 700px;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.detailsBox label{
+    margin:0;
+    padding:0;
+    font-weight:bold;
+    color:#bfc4ad;
+}
+input[type=text], select, textarea {
+    width: 65%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  [type="Submit"]
+  {
+   clear: left;
+   margin: 40px 0 0 300px;
+   font-size:25px;
+   color:#ffffff;
+       background:#56564d;
+       position: absolute;
+       top: 90%;
+       left:10%;
+       transform: translate(-50%, -50%);
+   }
+   [type="Submit"]:hover{
+       border:none;
+       outline:none;
+       height:50px;
+       left:10%;
+       color:#ffffff;
+       font-size:20px;
+       background:#56564d;
+       cursor:pointer;
+       border-radius:40px;
+   }
+ 
