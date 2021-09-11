@@ -129,7 +129,7 @@ export default class AddPatient extends Component {
     axios.post('http://localhost:5000/exercises/add', patient)
       .then(res => console.log(res.data));
 
-    window.location = '/pages/managePharmacy';
+    window.location = '/managePharmacy';
 
     this.setState({
       cname: '',
@@ -151,139 +151,141 @@ export default class AddPatient extends Component {
 
   render() {
     return (
-      <div class="detailsBox">
-        <h3>Create New User</h3>
-        <form onSubmit={this.onSubmit}>
-          <div className="form-group">
-            <label>Customer Name: </label>
-            <input type="text"
-              required
-              className="form-control"
-              value={this.state.cname}
-              onChange={this.onChangeCname}
-            />
-          </div>
-          <div className="form-group">
-            <label>Age: </label>
-            <input type="text"
-              required
-              className="form-control"
-              value={this.state.age}
-              onChange={this.onChangeAge}
-            />
-          </div>
-
-          <div class="col-md-3">
-            <label for="validationCustom04" class="form-label">Gender:</label>
-            <select class="form-select" id="validationCustom04" required value={this.state.gender} onChange={this.onChangeGender}>
-
-              <option>Male</option>
-              <option>Female</option>
-
-
-            </select></div>
-          <div className="form-group">
-            <label>Mobile Number : </label>
-            <input type="text"
-              required
-              className="form-control"
-              value={this.state.mno}
-              onChange={this.onChangeMno}
-            />
-          </div>
-
-          <div class="row">
-            <div class="col-50">
-              <h4>Madicine Name</h4>
+      <div className='createPatientPage'>
+        <br />
+        <div className='container' id="createPatientForm">
+          <form onSubmit={this.onSubmit}>
+            <div className="form-group">
+              <label>Customer Name: </label>
               <input type="text"
                 required
                 className="form-control"
-                value={this.state.madicineno1}
-                onChange={this.onChangeMadicineno1}
-              />
-
-              <input type="text"
-                required
-                className="form-control"
-                value={this.state.madicineno2}
-                onChange={this.onChangeMadicineno2}
+                value={this.state.cname}
+                onChange={this.onChangeCname}
               />
             </div>
-            <div class="col-50">
-              <h4>Madicine no</h4>
+            <div className="form-group">
+              <label>Age: </label>
               <input type="text"
                 required
                 className="form-control"
-                value={this.state.madicine1}
-                onChange={this.onChangeMadicine1}
-              />
-              <input type="text"
-                required
-                className="form-control"
-                value={this.state.madicine2}
-                onChange={this.onChangeMadicine2}
+                value={this.state.age}
+                onChange={this.onChangeAge}
               />
             </div>
-          </div>
-          <div class="row">
-            <div class="col-50">
-              <h4>Dose</h4>
+
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Gender:</label>
+              <select class="form-select" id="validationCustom04" required value={this.state.gender} onChange={this.onChangeGender}>
+
+                <option>Male</option>
+                <option>Female</option>
+
+
+              </select></div>
+            <div className="form-group">
+              <label>Mobile Number : </label>
               <input type="text"
                 required
                 className="form-control"
-                value={this.state.dose1}
-                onChange={this.onChangeDose1}
-              />
-
-
-              <input type="text"
-                required
-                className="form-control"
-                value={this.state.dose2}
-                onChange={this.onChangeDose2}
+                value={this.state.mno}
+                onChange={this.onChangeMno}
               />
             </div>
-            <div class="col-50">
-              <h4>Price</h4>
 
-              <input type="text"
-                required
-                className="form-control"
-                value={this.state.mprice1}
-                onChange={this.onChangeMprice1}
-              />
+            <div class="row">
+              <div class="col-50">
+                <h4>Madicine Name</h4>
+                <input type="text"
+                  required
+                  className="form-control"
+                  value={this.state.madicineno1}
+                  onChange={this.onChangeMadicineno1}
+                />
 
-              <input type="text"
-                required
-                className="form-control"
-                value={this.state.mprice2}
-                onChange={this.onChangeMprice2}
-              />
+                <input type="text"
+                  required
+                  className="form-control"
+                  value={this.state.madicineno2}
+                  onChange={this.onChangeMadicineno2}
+                />
+              </div>
+              <div class="col-50">
+                <h4>Madicine no</h4>
+                <input type="text"
+                  required
+                  className="form-control"
+                  value={this.state.madicine1}
+                  onChange={this.onChangeMadicine1}
+                />
+                <input type="text"
+                  required
+                  className="form-control"
+                  value={this.state.madicine2}
+                  onChange={this.onChangeMadicine2}
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-50">
+                <h4>Dose</h4>
+                <input type="text"
+                  required
+                  className="form-control"
+                  value={this.state.dose1}
+                  onChange={this.onChangeDose1}
+                />
+
+
+                <input type="text"
+                  required
+                  className="form-control"
+                  value={this.state.dose2}
+                  onChange={this.onChangeDose2}
+                />
+              </div>
+              <div class="col-50">
+                <h4>Price</h4>
+
+                <input type="text"
+                  required
+                  className="form-control"
+                  value={this.state.mprice1}
+                  onChange={this.onChangeMprice1}
+                />
+
+                <input type="text"
+                  required
+                  className="form-control"
+                  value={this.state.mprice2}
+                  onChange={this.onChangeMprice2}
+                />
+
+              </div>
+
+
 
             </div>
 
 
 
-          </div>
 
 
+            <label>Total Price: </label>
+            <div>
+              <input type="text"
 
+                className="form-control"
+                value={((this.state.mprice1 * this.state.dose1) + (this.state.mprice2 * this.state.dose2))}
+                onClick={this.getTotal}
+              />
 
-
-          <label>Total Price: </label>
-          <div>
-            <input type="text"
-
-              className="form-control"
-              value={((this.state.mprice1 + this.state.mprice2))}
-              onClick={this.getTotal}
-            />
-
-          </div>
-          <div className="form-group">
-            <input type="Submit" value="Create Patient" className="btn btn-primary" onClick={this.getTotal} />
-          </div>
-        </form>
+            </div>
+            <div className="form-group">
+              <input type="Submit" value="Create Patient" className="btn btn-primary" onClick={this.getTotal} />
+            </div>
+          </form>
+        </div>
       </div>
     )
   }

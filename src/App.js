@@ -47,8 +47,8 @@ import viewcalCost from "./components/pages/viewcalCost";
 //Naveen
 import ManagePharmacy from './components/PharmacyServices/managePharmacy';
 import AddMadicine from "./components/pages/create";
-import MadicineList from "./components/pages/madicine-list";
-import EditPatientPharmacy from "./components/pages/editpatientPharm";
+import MadicineList from "./components/pages/medicineList";
+import EditMadicine from "./components/pages/editpatientPharm";
 import AddPatientPharmacy from "./components/pages/create-patient";
 
 //Venura
@@ -110,8 +110,8 @@ function App() {
 
               <Route path='/managePharmacy' component={ManagePharmacy} />
               <Route path="/create" component={AddMadicine} />
-              <Route path="/madicine-list" component={MadicineList} />
-              <Route path="/editpatientPharm/:id" component={EditPatientPharmacy} />
+              <Route path="/medicineList" component={MadicineList} />
+              <Route path="/editpatientPharm/:id" component={EditMadicine} />
               <Route path="/create-patient" component={AddPatientPharmacy} />
 
               <Route path="/registerVaccine" component={RegisterVaccine} />
