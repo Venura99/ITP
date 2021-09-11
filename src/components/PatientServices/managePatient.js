@@ -10,7 +10,7 @@ import { ManagePatientContainer,  ManagePatientH1,  ManagePatientWrapper, Manage
 function  ManagePatient() {
     return (
         <div className="managePatient">
-            <h3>PATIENT MANAGEMENT</h3>
+            <h3 className="patientManagement">PATIENT MANAGEMENT</h3>
 
             <ManagePatientContainer id='managePatient'>
                 <ManagePatientH1>Select task to continue</ManagePatientH1><br></br>
