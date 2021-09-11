@@ -8,7 +8,8 @@ const Salary = props => (
         <td>{props.salary.date}</td>
         <td>{props.salary.name}</td>
         <td>{props.salary.basicSalary}</td>
-        <td>{props.salary.noOfDays}</td>
+        <td>{props.salary.otHours}</td>
+        <td>{props.salary.otPay}</td>
         <td>{props.salary.chanellingFee}</td>
         <td>{props.salary.noOfAppointments}</td>
         <td>{props.salary.totalSalary}</td>
@@ -56,8 +57,9 @@ export default class ViewSalary extends Component {
 
     render() {
         return (
-            <div className='viewsalary'>
-                <div className='container'>
+            <div className='viewSalaryPage'>
+                <br />
+                <div className='container' id="viewSalaryForm">
                     <h3>Staff Salary Details</h3>
                     <table className="table">
                         <thead className="thead-light">
@@ -65,10 +67,12 @@ export default class ViewSalary extends Component {
                                 <th>Date</th>
                                 <th>Name</th>
                                 <th>Basic Salary</th>
-                                <th>Worked For</th>
+                                <th>OT Hours</th>
+                                <th>OT Pay</th>
                                 <th>Chanelling Fee</th>
                                 <th>Appointments</th>
                                 <th>Total Salary</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>

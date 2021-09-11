@@ -1,0 +1,165 @@
+.manageStaff{
+    background-color: #cc99ff;
+    background-size: cover;
+}
+
+h3{
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    font-size: 3rem;
+}
+  
+p{
+    font-size: 25px;
+}
+
+.staffManageTitle{
+	font-family:'Times New Roman', Times, serif;
+	font-weight: bold;
+	background-color:mediumpurple;
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.addStaffTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.viewStaffTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.calcSalaryTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.searchStaffTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.searchSalaryTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.searchStaffBtn{
+	align-items: left;
+	border-radius: 8px;
+	background-color:#AFEEEE;
+	height: 40px;
+	width:200px;
+	transition-duration: 0.4s;
+}
+
+.searchStaffBtn:hover {
+	background-color: white;
+}
+
+.viewAllSalaryBtn{
+	margin: 40px;
+	border-radius: 8px;
+	background-color:#FA8072;
+	height: 40px;
+	width:240px;
+	transition-duration: 0.4s;
+}
+
+.viewAllSalaryBtn:hover {
+	background-color: white;
+}
+
+.homeLink {
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.link {
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.linkToViewSalary{
+	margin: 20px;;
+	font-weight: bold;
+	width: 200px;
+}
+
+.calcSalaryPage{
+	background: url("https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGhlYWx0aGNhcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#calcForm{
+	max-width: 800px;
+	padding: 16px;
+	background-color: white;
+}
+
+.addStaffPage{
+	background: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGhlYWx0aGNhcmUlMjBtYW5hZ2VtZW50fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#addStaffForm{
+	max-width: 800px;
+  padding: 16px;
+  background-color: white;
+}
+
+
+.viewStaffPage{
+  	background: url("https://images.unsplash.com/photo-1513224502586-d1e602410265?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzJ8fGhlYWx0aGNhcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#viewStaffForm{
+	max-width: 1300px;
+	padding: 16px;
+	background-color: white;
+}
+
+.searchStaffPage{
+	background: url("https://image.shutterstock.com/image-photo/healthcare-people-group-professional-doctor-260nw-1213711042.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#searchStaffForm{
+	max-width: 700px;
+	height:500px;
+	padding: 16px;
+	background-color: white;
+}
+
+.searchBar{
+	width:400px;
+}
+
+#btns{
+	left: 10px;
+}
+

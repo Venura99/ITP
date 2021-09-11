@@ -15,10 +15,11 @@ router.route('/add').post((req, res) => {
     const name = req.body.name;
     const date = Date.parse(req.body.date);;
     const basicSalary = req.body.basicSalary;
-    const noOfDays = req.body.noOfDays;
+    const otHours = req.body.otHours;
+    const otPay = req.body.otPay;
     const chanellingFee = req.body.chanellingFee;
     const noOfAppointments = req.body.noOfAppointments;
-    const totalSalary = ((basicSalary * noOfDays) + (chanellingFee * noOfAppointments));
+    const totalSalary = (basicSalary + (otHours * otPay) + (chanellingFee * noOfAppointments));
 
     const newSalary = new Salary({
 
@@ -26,7 +27,8 @@ router.route('/add').post((req, res) => {
         name,
         date,
         basicSalary,
-        noOfDays,
+        otHours,
+        otPay,
         chanellingFee,
         noOfAppointments,
         totalSalary
@@ -60,7 +62,8 @@ router.route('/update/:id').post((req, res) => {
             salary.name = req.body.name;
             salary.date = Date.parse(req.body.date);
             salary.basicSalary = req.body.basicSalary;
-            salary.noOfDays = req.body.noOfDays;
+            salary.otHours = req.body.otHours;
+            salary.otPay = req.body.otPay;
             salary.chanellingFee = req.body.chanellingFee;
             salary.noOfAppointments = req.body.noOfAppointments;
             salary.totalSalary = ((basicSalary * noOfDays) + (chanellingFee * noOfAppointments));

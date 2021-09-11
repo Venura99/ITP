@@ -15,7 +15,7 @@ export const ManageLabContainer = styled.div`
     }
 `
 export const ManageLabWrapper = styled.div`
-    max-width: 500px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

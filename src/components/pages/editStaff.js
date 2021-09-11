@@ -8,21 +8,19 @@ export default class EditStaff extends Component {
 
         this.onChangeName = this.onChangeName.bind(this);
         this.onChangeNIC = this.onChangeNIC.bind(this);
+        this.onChangeDepartment = this.onChangeDepartment.bind(this);
         this.onChangeGender = this.onChangeGender.bind(this);
         this.onChangePhone = this.onChangePhone.bind(this);
         this.onChangeEmail = this.onChangeEmail.bind(this);
-        this.onChangeUsername = this.onChangeUsername.bind(this);
-        this.onChangePassword = this.onChangePassword.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
             name: '',
+            department: '',
             nic: '',
             gender: '',
             phone: '',
             email: '',
-            username: '',
-            password: '',
         }
     }
 
@@ -31,12 +29,11 @@ export default class EditStaff extends Component {
             .then(response => {
                 this.setState({
                     name: response.data.name,
+                    department: response.data.department,
                     nic: response.data.nic,
                     gender: response.data.gender,
                     phone: response.data.phone,
                     email: response.data.email,
-                    username: response.data.username,
-                    password: response.data.password,
                 })
             })
             .catch(function (error) {
@@ -48,6 +45,12 @@ export default class EditStaff extends Component {
     onChangeName(e) {
         this.setState({
             name: e.target.value
+        });
+    }
+
+    onChangeDepartment(e) {
+        this.setState({
+            department: e.target.value
         });
     }
 
@@ -75,29 +78,16 @@ export default class EditStaff extends Component {
         });
     }
 
-    onChangeUsername(e) {
-        this.setState({
-            username: e.target.value
-        });
-    }
-
-    onChangePassword(e) {
-        this.setState({
-            password: e.target.value
-        });
-    }
-
     onSubmit(e) {
         e.preventDefault();
 
         const staff = {
             name: this.state.name,
+            department: this.state.department,
             nic: this.state.nic,
             gender: this.state.gender,
             phone: this.state.phone,
             email: this.state.email,
-            username: this.state.username,
-            password: this.state.password
         }
 
         console.log(staff);
@@ -124,6 +114,16 @@ export default class EditStaff extends Component {
                             />
                         </div>
                         <div className="form-group">
+                            <label>Department: <br />
+                                <select className="staffDept" value={this.state.department}
+                                    onChange={this.onChangeDepartment}>
+                                    <option value="Medical">Medical</option>
+                                    <option value="Management">Management</option>
+                                    <option value="Minor Staff">Minor Staff</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div className="form-group">
                             <label>NIC: </label>
                             <input type="text"
                                 required
@@ -133,13 +133,13 @@ export default class EditStaff extends Component {
                             />
                         </div>
                         <div className="form-group">
-                            <label>Gender: </label>
-                            <input type="text"
-                                required
-                                className="form-control"
-                                value={this.state.gender}
-                                onChange={this.onChangeGender}
-                            />
+                            <label>Gender:<br />
+                                <select className="staffGender" value={this.state.gender}
+                                    onChange={this.onChangeGender}>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </label>
                         </div>
                         <div className="form-group">
                             <label>Phone: </label>
@@ -157,24 +157,6 @@ export default class EditStaff extends Component {
                                 className="form-control"
                                 value={this.state.email}
                                 onChange={this.onChangeEmail}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Username: </label>
-                            <input type="text"
-                                required
-                                className="form-control"
-                                value={this.state.username}
-                                onChange={this.onChangeUsername}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Password: </label>
-                            <input type="text"
-                                required
-                                className="form-control"
-                                value={this.state.password}
-                                onChange={this.onChangePassword}
                             />
                         </div>
                         <br />

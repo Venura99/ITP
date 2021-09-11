@@ -59,6 +59,16 @@ import Viewp from "./components/pages/viewp";
 import CovidManage from "./components/CovidManage/covidManage";
 import ViewTfee from './components/pages/viewTfee';
 
+//Pinidu
+import FinanceManage from "./components/FinanceManagement/financeManage";
+import ExpensesList from "./components/pages/expenses-list.component";
+import IncomeList from "./components/pages/income-list.component";
+import EditExpenses from "./components/pages/edit-expenses.component";
+import EditIncome from "./components/pages/edit-income.component";
+import CreateExpenses from "./components/pages/create-expenses.component";
+import CreateIncome from "./components/pages/create-income.component";
+import calcExpenses from "./components/pages/calcExpenses";
+
 if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
@@ -120,6 +130,15 @@ function App() {
               <Route path="/viewp" component={Viewp} />
               <Route path="/covidManage" component={CovidManage} />
               <Route path="/viewTfee" component={ViewTfee} />
+
+              <Route path='/financeManage' component={FinanceManage} />
+              <Route path="/edit-expenses.component/:id" component={EditExpenses} />
+              <Route path="/edit-income.component/:id" component={EditIncome} />
+              <Route path="/create-expenses.component" component={CreateExpenses} />
+              <Route path="/create-income.component" component={CreateIncome} />
+              <Route path="/expenses-list.component" component={ExpensesList} />
+              <Route path="/income-list.component" component={IncomeList} />
+              <Route path="/Calculations/calcExpenses" component={calcExpenses} />
             </div>
           </Switch>
         </Router>

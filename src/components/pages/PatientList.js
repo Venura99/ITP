@@ -62,7 +62,7 @@ export default class PatientList extends Component {
       <div className="PatientList">
 
         <h2 className="admitPatientTitle">Patient List</h2><br></br><br></br>
-        <table className="table" className="container">
+        <table id="table" className="container">
 
           <tr>
             <th>Patient Name</th>

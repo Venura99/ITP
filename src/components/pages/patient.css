@@ -117,7 +117,6 @@
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-size: cover;
-    position: relative;
   
 }
 
@@ -179,12 +178,12 @@ p{
     font-size: 30px;
 }
 
-table {
+#table {
     border-collapse: collapse;
-    width: 70%;
+    width: 500%;
 }
   
-table ,tr,td{
+#table ,tr,td{
     border: 1px solid #ddd;
     text-align: left;
 }

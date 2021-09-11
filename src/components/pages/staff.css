@@ -1,10 +1,6 @@
 .staffManageTitle{
-	font-family:'Times New Roman', Times, serif;
 	font-weight: bold;
-	background-color:mediumpurple;
-	color: black;
-	margin: 0;
-	height: 60px;
+	color:black;
 }
 
 .addStaffTitle{
@@ -40,7 +36,7 @@
 .searchStaffBtn{
 	align-items: left;
 	border-radius: 8px;
-	background-color:#AFEEEE;
+	background-color:rgb(187, 184, 184);
 	height: 40px;
 	width:200px;
 	transition-duration: 0.4s;
@@ -51,15 +47,28 @@
 }
 
 .viewAllSalaryBtn{
-	margin: 40px;
+	margin: 20px;
 	border-radius: 8px;
-	background-color:#FA8072;
+	background-color:lightcoral;
 	height: 40px;
 	width:240px;
 	transition-duration: 0.4s;
 }
 
 .viewAllSalaryBtn:hover {
+	background-color: white;
+}
+
+.searchSalaryBtn{
+	margin: 25px;
+	border-radius: 8px;
+	background-color:lightcoral;
+	height: 40px;
+	width:240px;
+	transition-duration: 0.4s;
+}
+
+.searchSalaryBtn:hover {
 	background-color: white;
 }
 
@@ -71,15 +80,17 @@
 	box-sizing: border-box;
 }
 
-.link {
-	font-family: "Poppins", sans-serif;
-	font-size: 20px;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+.toSearchPage{
+	color:purple;
+	font-weight: bold;
+}
+
+.viewStaffDeleteLink{
+	color:red;
 }
 
 .linkToViewSalary{
+	color: maroon;
 	margin: 20px;;
 	font-weight: bold;
 	width: 200px;
@@ -93,9 +104,29 @@
 }
 
 #calcForm{
-	max-width: 800px;
-	padding: 16px;
-	background-color: white;
+	opacity: 0.95;
+	padding:40px;
+    margin: 0 auto;
+    display: grid;
+	max-width: 850px;
+	background-color:salmon;
+}
+
+.viewSalaryPage{
+	background: url("https://www.ritchielawfirm.com/wp-content/uploads/2019/05/insurance-company-article.jpghtthttps://thumbs.dreamstime.com/b/salary-text-written-notebook-office-background-215042055.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#viewSalaryForm{
+	opacity: 0.95;
+	max-width: 1300px;
+	padding:40px;
+    margin: 0 auto;
+    display: grid;
+	max-width: 850px;
+	background-color:rgb(12, 0, 117);
 }
 
 .addStaffPage{
@@ -106,23 +137,28 @@
 }
 
 #addStaffForm{
-	max-width: 800px;
-  padding: 16px;
-  background-color: white;
+	max-width: 1240px;
+	opacity: 0.95;
+    background:rgb(54, 160, 149);
+    padding: 40px;
+    margin: 0 auto;
+    display: grid;
 }
 
 
 .viewStaffPage{
-  	background: url("https://media.istockphoto.com/photos/healthcare-business-concept-medical-examination-and-growth-graph-data-picture-id1274428125?b=1&k=20&m=1274428125&s=170667a&w=0&h=EpVLrYgklXI3RQkO6Bh04zBcW2BE85BBqbSjQc-oip8=") no-repeat center center fixed;
+  	background: url("https://thumbs.dreamstime.com/b/top-view-doctor-desk-table-stethoscope-coffee-notebook-pen-top-view-copy-space-flat-lay-top-view-doctor-98759201.jpg") no-repeat center center fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 #viewStaffForm{
-	max-width: 1300px;
-	padding: 16px;
-	background-color: white;
+	max-width: 1240px;
+    background:rgb(54, 160, 149);
+    padding: 40px;
+    margin: 0 auto;
+    display: grid;
 }
 
 .searchStaffPage{
@@ -139,10 +175,32 @@
 	background-color: white;
 }
 
+.searchSalaryPage{
+	background: url("https://airvat.com/how-to-calculate-your-vat-refund-in-the-uk-thumb.dacfdafd.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#searchSalaryForm{
+	max-width: 700px;
+	height:500px;
+	padding: 16px;
+	background-color: white;
+}
+
 .searchBar{
 	width:400px;
 }
 
 #btns{
 	left: 10px;
+}
+
+.staffGender{
+	width:150px;
+}
+
+.staffDept{
+	width:180px;
 }

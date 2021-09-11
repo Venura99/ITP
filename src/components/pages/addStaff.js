@@ -8,23 +8,21 @@ export default class AddStaff extends Component {
 
         this.onChangeID = this.onChangeID.bind(this);
         this.onChangeName = this.onChangeName.bind(this);
+        this.onChangeDepartment = this.onChangeDepartment.bind(this);
         this.onChangeNIC = this.onChangeNIC.bind(this);
         this.onChangeGender = this.onChangeGender.bind(this);
         this.onChangePhone = this.onChangePhone.bind(this);
         this.onChangeEmail = this.onChangeEmail.bind(this);
-        this.onChangeUsername = this.onChangeUsername.bind(this);
-        this.onChangePassword = this.onChangePassword.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
             _id: '',
             name: '',
+            department: '',
             nic: '',
             gender: '',
             phone: '',
-            email: '',
-            username: '',
-            password: '',
+            email: ''
         }
     }
 
@@ -37,6 +35,12 @@ export default class AddStaff extends Component {
     onChangeName(e) {
         this.setState({
             name: e.target.value
+        });
+    }
+
+    onChangeDepartment(e) {
+        this.setState({
+            department: e.target.value
         });
     }
 
@@ -64,30 +68,17 @@ export default class AddStaff extends Component {
         });
     }
 
-    onChangeUsername(e) {
-        this.setState({
-            username: e.target.value
-        });
-    }
-
-    onChangePassword(e) {
-        this.setState({
-            password: e.target.value
-        });
-    }
-
     onSubmit(e) {
         e.preventDefault();
 
         const staff = {
             _id: this.state._id,
             name: this.state.name,
+            department: this.state.department,
             nic: this.state.nic,
             gender: this.state.gender,
             phone: this.state.phone,
-            email: this.state.email,
-            username: this.state.username,
-            password: this.state.password
+            email: this.state.email
         }
 
         console.log(staff);
@@ -126,6 +117,18 @@ export default class AddStaff extends Component {
                                 onChange={this.onChangeName}
                             />
                         </div>
+                        <br />
+                        <div className="form-group">
+                            <label>Department: <br />
+                                <select className="staffDept" value={this.state.department}
+                                    onChange={this.onChangeDepartment}>
+                                    <option value="Medical">Medical</option>
+                                    <option value="Management">Management</option>
+                                    <option value="Minor Staff">Minor Staff</option>
+                                </select>
+                            </label>
+                        </div>
+                        <br />
                         <div className="form-group">
                             <label>NIC: </label>
                             <input type="text"
@@ -135,15 +138,17 @@ export default class AddStaff extends Component {
                                 onChange={this.onChangeNIC}
                             />
                         </div>
+                        <br />
                         <div className="form-group">
-                            <label>Gender:
-                                <select value={this.state.gender}
+                            <label>Gender:<br />
+                                <select className="staffGender" value={this.state.gender}
                                     onChange={this.onChangeGender}>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
                                 </select>
                             </label>
                         </div>
+                        <br />
                         <div className="form-group">
                             <label>Phone: </label>
                             <input
@@ -160,26 +165,6 @@ export default class AddStaff extends Component {
                                 className="form-control"
                                 value={this.state.email}
                                 onChange={this.onChangeEmail}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Username: </label>
-                            <div>
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    value={this.state.username}
-                                    onChange={this.onChangeUsername}
-                                />
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <label>Password: </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                value={this.state.password}
-                                onChange={this.onChangePassword}
                             />
                         </div>
 
