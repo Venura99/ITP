@@ -113,9 +113,9 @@ export default class EditLab extends Component {
   render() {
     return (
       <div className="EditLab">
-        <h3 className="addlabTitle">Edit Lab Log</h3>
+        <h3 className="addlabTitle">Edit Lab Details</h3><br/>
         <form onSubmit={this.onSubmit}>
-          <div className="form-group">
+          <div className="form-labgroup2">
             <label><b>Patient Name: </b></label>
             <input type="text"
               required
@@ -125,7 +125,7 @@ export default class EditLab extends Component {
 
 
           </div>
-          <div className="form-group">
+          <div className="form-labgroup2">
             <label><b>Age: </b></label>
             <input type="text"
               required
@@ -137,8 +137,8 @@ export default class EditLab extends Component {
           
 
 
-          <div className="form-group">
-            <label>Mobile Number: </label>
+          <div className="form-labgroup2">
+            <label><b>Mobile Number: </b></label>
             <input type="text"
               required
               className="form-control"
@@ -148,8 +148,8 @@ export default class EditLab extends Component {
               onChange={this.onChangeMobilenumber}
             />
           </div>
-          <div className="form-group">
-            <label>Test Type: </label>
+          <div className="form-labgroup2">
+            <label><b>Test Type:</b> </label>
             <input type="text"
               required
               className="form-control"
@@ -157,8 +157,8 @@ export default class EditLab extends Component {
               onChange={this.onChangeTesttype}
             />
           </div>
-          <div className="form-group">
-            <label>Test Result: </label>
+          <div className="form-labgroup2">
+            <label><b>Test Result:</b> </label>
             <input type="text"
               required
               className="form-control"
@@ -166,18 +166,19 @@ export default class EditLab extends Component {
               onChange={this.onChangeTestresult}
             />
           </div>
-          <div className="form-group">
-            <label>Test Date: </label>
+          <div className="form-labgroup2">
+            <label><b>Test Date: </b></label>
             <div>
               <DatePicker
                 selected={this.state.testdate}
                 onChange={this.onChangeTestdate}
               />
             </div>
+         
+          <br/><br/>
+          <div className="labform">
+            <input type="submit" id="btnlab7" value="UPDATE LAB DETAILS" className="btn btn-primary" />
           </div>
-
-          <div className="form">
-            <input type="submit" id="btn7" value="UPDATE LAB DETAILS" className="btn btn-primary" />
           </div>
         </form>
       </div>

@@ -3,34 +3,40 @@
     background-size: cover;
 }
 
-h2{
-    display: flex;
-    height: 10vh;
-    color: #000000;
-    justify-content: center;
-    font-size: 3rem;
-}
-.form-group{
+.form-labgroup1{
     width: 80%;
     background-color: transparent;
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
     display: grid;
     max-width: 900px;
-    border-radius: 5px;
-  background: rgba(113, 148, 207, 0.5);
-  padding: 20px;
-}
-.form-radio{
-    width: 80%;
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin: 0 auto;
-    display: line;
-    max-width: 900px;
+    background: rgba(23, 126, 129, 0.5);
+  
 }
 
-.form{
+.form-labgroup2{
+    width: 80%;
+    background-color: transparent;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    max-width: 900px;
+    background: rgba(64, 192, 243, 0.5);
+  
+}
+
+.form-labgroup3{
+    width: 80%;
+    background-color: transparent;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    max-width: 900px;
+    background: rgba(17, 88, 90, 0.5);
+  
+}
+
+.labform{
     width: 60%;
     padding: 10px;
     margin: 0 auto;
@@ -38,26 +44,9 @@ h2{
     max-width: 500px;
 }
 
-
-
-
-body{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
 p{
     font-size: 30px;
 }
-
-h2{
-    text-align: center;
-    font-style: bold;
-    color:#0f688b
-}
-
 
 table {
     border-collapse: collapse;
@@ -91,9 +80,6 @@ th:nth-child(even){
     background-color: #f2f2f2;
 }
 
-
-
-
 th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -103,7 +89,7 @@ th {
 }
 
 .AddLab{
-    background-image: url('https://cdn.openpr.com/U/4/U415124366_g.jpg');
+    background-image: url('https://encycloblog.com/wp-content/uploads/2020/11/research-have-been-made.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -118,9 +104,6 @@ th {
     background-position-y: 0px;
 }
 
-
-
-
 .LabView{
     background-image: url('https://t3.ftcdn.net/jpg/03/15/66/96/360_F_315669632_zpQL6tY63tJEInUk64OBSq05fglGaFVP.jpg');
     background-position: center;
@@ -131,7 +114,7 @@ th {
 }
 
 .calCost{
-    background-image: url('https://i.pinimg.com/originals/90/fb/ba/90fbba14215fbc7c32810b0bf4e74023.jpg');
+    background-image: url('https://econsultontario.ca/wp-content/uploads/2019/11/image001-1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,18 +123,18 @@ th {
 }
 
 .EditLab{
-    background-image: url('https://cdn.openpr.com/U/4/U415124366_g.jpg');
+    background-image: url('https://www.lifepoint.com/wp-content/uploads/2021/01/affordable-interface-outreach.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 0px;
 }
 
-#btn1{
+#btnlab1{
     background-color: rgb(17, 35, 204);
     border: none;
     color: rgb(223, 223, 233);
-    height: 40px;
+    height: 50px;
     width: 500px;
     text-align: center;
     font-weight: bold;
@@ -161,7 +144,7 @@ th {
    
 }
 
-#btn2{
+#btnlab2{
     background-color:red;
     border: none;
     color: rgb(223, 223, 233);
@@ -171,14 +154,13 @@ th {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    height: 40px;
+    height: 50px;
     width: 900px;
 }
-#btn7{
-    background-color:blue;
+#btnlab7{
+    background-color:#1f4287;
     border: none;
-    color: rgb(223, 223, 233);
-    height: 40px;
+    height: 50px;
     width: 500px;
     text-align: center;
     font-weight: bold;
@@ -187,11 +169,9 @@ th {
     font-size: 16px;
 }
 
-#btn3{
-    background-color:blue;
+#btnlab3{
+    background-color:#1e2a78;
     border: none;
-    color: rgb(223, 223, 233);
-   
     text-align: center;
     font-weight: bold;
     text-decoration: none;
@@ -202,22 +182,21 @@ th {
     margin: 0 auto;
     display: grid;
     max-width: 900px;
+    height: 50px;
 }
 
-#b9{
-    color: #10316b; 
-
-}
 #buttonlab
     {
     color: #d72323;
 }
 
 .addlabTitle{
-    color: rgb(15, 18, 175);
+    color: #303a52;
+    font-weight: bold;
 }
 
 .viewlabTital{
     color: rgb(15, 18, 175);
     font-style: oblique;
+    font-weight: bold;
 }

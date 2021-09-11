@@ -55,7 +55,7 @@ export default class LabView extends Component {
   render() {
     return (
       <div className="LabView">
-        <h3 className="viewlabTital">View lab details</h3>
+        <h3 className="viewlabTital">Lab Details</h3><br/><br/>
         <table className="table" className="container">
           <thead className="thead-light">
             <tr>
