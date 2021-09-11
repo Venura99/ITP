@@ -1,11 +1,148 @@
-.addStaff{
-    background-color:lightgray;
+.staffManageTitle{
+	font-family:'Times New Roman', Times, serif;
+	font-weight: bold;
+	background-color:mediumpurple;
+	color: black;
+	margin: 0;
+	height: 60px;
 }
 
-.viewStaff{
-    background-color:lightgray;
-  }
+.addStaffTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
 
-  .editStaff{
-    background-color:lightgray;
-  }
+.viewStaffTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.calcSalaryTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.searchStaffTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.searchSalaryTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.searchStaffBtn{
+	align-items: left;
+	border-radius: 8px;
+	background-color:#AFEEEE;
+	height: 40px;
+	width:200px;
+	transition-duration: 0.4s;
+}
+
+.searchStaffBtn:hover {
+	background-color: white;
+}
+
+.viewAllSalaryBtn{
+	margin: 40px;
+	border-radius: 8px;
+	background-color:#FA8072;
+	height: 40px;
+	width:240px;
+	transition-duration: 0.4s;
+}
+
+.viewAllSalaryBtn:hover {
+	background-color: white;
+}
+
+.homeLink {
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.link {
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.linkToViewSalary{
+	margin: 20px;;
+	font-weight: bold;
+	width: 200px;
+}
+
+.calcSalaryPage{
+	background: url("https://www.ritchielawfirm.com/wp-content/uploads/2019/05/insurance-company-article.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#calcForm{
+	max-width: 800px;
+	padding: 16px;
+	background-color: white;
+}
+
+.addStaffPage{
+	background: url("https://c1.wallpaperflare.com/preview/401/399/725/stethoscope-medical-health-doctor-macbook-laptop.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#addStaffForm{
+	max-width: 800px;
+  padding: 16px;
+  background-color: white;
+}
+
+
+.viewStaffPage{
+  	background: url("https://media.istockphoto.com/photos/healthcare-business-concept-medical-examination-and-growth-graph-data-picture-id1274428125?b=1&k=20&m=1274428125&s=170667a&w=0&h=EpVLrYgklXI3RQkO6Bh04zBcW2BE85BBqbSjQc-oip8=") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#viewStaffForm{
+	max-width: 1300px;
+	padding: 16px;
+	background-color: white;
+}
+
+.searchStaffPage{
+	background: url("https://image.shutterstock.com/image-photo/healthcare-people-group-professional-doctor-260nw-1213711042.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#searchStaffForm{
+	max-width: 700px;
+	height:500px;
+	padding: 16px;
+	background-color: white;
+}
+
+.searchBar{
+	width:400px;
+}
+
+#btns{
+	left: 10px;
+}

@@ -61,11 +61,11 @@ export default class ViewStaff extends Component {
         return (
             <div className='viewStaffPage'>
                 <br />
-                <Link to="/searchStaff" className="btn btn-primary" id="btns">Search Staff</Link>
-                <br /><br />
                 <div className='container' id="viewStaffForm">
-                    <h3>Hospital Staff</h3>
-                    <br /><br />
+                    <button className="searchStaffBtn"><Link to="/searchStaff" >Search Staff</Link></button>
+                    <br />
+                    <h3 className="viewStaffTitle">HOSPITAL STAFF</h3>
+                    <br />
                     <table className="table">
                         <thead className="thead-light">
                             <tr>

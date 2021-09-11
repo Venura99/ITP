@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import './staff.css';
 
 function SearchBar() {
     const [search, setSearch] = useState('');
@@ -24,8 +24,9 @@ function SearchBar() {
 
     return (
         <div className="searchStaffPage">
+            <br />
             <div className='container' id="searchStaffForm">
-                <h3>SEARCH STAFF DETAILS</h3>
+                <h3 className="searchStaffTitle">SEARCH STAFF DETAILS</h3>
                 <h5>Enter employee name to view name and ID </h5>
                 <br />
                 <input className="searchBar" type="text" placeholder="Search..." onChange={(e) => {

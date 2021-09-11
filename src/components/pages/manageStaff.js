@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './manageStaff.css';
 import addEmp from '../../images/addEmp.png';
 import viewEmp from '../../images/viewEmp.jpg';
 import generateEmp from '../../images/generateEmp.jpg';
@@ -11,8 +10,8 @@ import { ManageStaffContainer, ManageStaffH1, ManageStaffWrapper, ManageStaffCar
 function ManageStaff() {
     return (
         <div >
-            <h3>HOSPITAL STAFF MANAGEMENT</h3>
-            <ManageStaffContainer className="manageStaffPage" id='manageStaff'>
+            <h3 className="staffManageTitle">HOSPITAL STAFF MANAGEMENT</h3>
+            <ManageStaffContainer className="manageStaffPage">
                 <ManageStaffH1>Select task to continue</ManageStaffH1>
                 <ManageStaffWrapper>
                     <ManageStaffCard>

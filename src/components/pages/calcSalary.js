@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link, Redirect } from "react-router-dom";
 import DatePicker from "react-datepicker";
-
+import './staff.css';
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -100,7 +100,7 @@ export default class CalcSalary extends Component {
             .then(res => console.log(res.data));
 
         alert("Salary Entry Added!");
-        window.location = '/calcSalary'
+        window.location = '/viewSalary'
     }
 
 
@@ -108,11 +108,10 @@ export default class CalcSalary extends Component {
         return (
 
             <div className="calcSalaryPage">
+                <button className="viewAllSalaryBtn"><Link to="/viewSalary">View All Salary Details</Link></button>
                 <br />
-                <button id="btns" className="btn btn-primary"><Link to="/viewSalary">View All Salary Details</Link></button>
-                <br /><br />
                 <form onSubmit={this.onSubmit} className="container" id="calcForm">
-                    <h3>EMPLOYEE SALARY CALCULATION</h3>
+                    <h3 className="calcSalaryTitle">EMPLOYEE SALARY CALCULATION</h3>
                     <div className="form-group">
                         <label>Date: </label>
                         <div>
@@ -142,15 +141,22 @@ export default class CalcSalary extends Component {
                         />
                     </div>
 
+                    <br />
                     <div className="form-group">
-                        <label>Basic Salary: </label>
-                        <input type="text"
-                            required
-                            className="form-control"
-                            value={this.state.basicSalary}
-                            onChange={this.onChangeBasicSalary}
-                        />
+                        <label>Basic Salary:
+                            <select value={this.state.basicSalary}
+                                onChange={this.onChangeBasicSalary}>
+                                <option disabled>Doctor</option>
+                                <option value="7000">7000</option>
+                                <option disabled>Management Staff</option>
+                                <option value="4500">4500</option>
+                                <option disabled>Minor Staff</option>
+                                <option value="3500">3500</option>
+                            </select>
+                        </label>
                     </div>
+                    <br />
+
                     <div className="form-group">
                         <label>Number of Days Worked: </label>
                         <input

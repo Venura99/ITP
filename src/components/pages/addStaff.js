@@ -95,7 +95,7 @@ export default class AddStaff extends Component {
         axios.post('http://localhost:5000/staff/add', staff)
             .then(res => console.log(res.data));
 
-        window.location = '/addStaff';
+        window.location = '/viewStaff';
 
     }
 
@@ -103,8 +103,10 @@ export default class AddStaff extends Component {
     render() {
         return (
             <div className='addStaffPage'>
+                <br />
                 <div className='container' id="addStaffForm">
-                    <h3>ADD NEW STAFF MEMBER</h3>
+                    <h3 className="addStaffTitle">ADD NEW STAFF MEMBER</h3>
+                    <br />
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
                             <label>Staff ID: </label>
@@ -134,13 +136,13 @@ export default class AddStaff extends Component {
                             />
                         </div>
                         <div className="form-group">
-                            <label>Gender: </label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                value={this.state.gender}
-                                onChange={this.onChangeGender}
-                            />
+                            <label>Gender:
+                                <select value={this.state.gender}
+                                    onChange={this.onChangeGender}>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </label>
                         </div>
                         <div className="form-group">
                             <label>Phone: </label>

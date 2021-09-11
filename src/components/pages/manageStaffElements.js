@@ -6,7 +6,7 @@ export const ManageStaffContainer = styled.div`
     flex-direction: column;
     justify-content: left;
     align-items: center;
-    background: url("https://www.teahub.io/photos/full/164-1643331_purple-background-free-download.jpg") no-repeat center center fixed;
+    background: url("https://thumbs.dreamstime.com/b/stethoscope-medical-documents-doctor-table-purple-background-close-up-view-directly-above-medical-exam-health-care-170135332.jpg") no-repeat center center fixed;
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@ export const ManageStaffContainer = styled.div`
     }
 `
 export const ManageStaffWrapper = styled.div`
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -45,11 +45,12 @@ export const ManageStaffCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-width: 300px;
+    max-width: 325px;
     max-height: 370px;
-    padding: 30px;
+    padding: 40px;
     box-shadow: 0 1px 3px rgba(0,0,0,0,2);
     transition: all 0.2s ease-in-out;
+    opacity:0.9;
 
     &:hover{ 
         transform: scale(1.02);
@@ -65,7 +66,7 @@ export const ManageStaffIcon = styled.img`
 `
 
 export const ManageStaffH1 = styled.h1`
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: black;
     margin-bottom: 32px;
 

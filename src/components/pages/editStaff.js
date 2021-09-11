@@ -105,7 +105,7 @@ export default class EditStaff extends Component {
         axios.post('http://localhost:5000/staff/update/' + this.props.match.params.id, staff)
             .then(res => console.log(res.data));
 
-        window.location = '/';
+        window.location = '/viewStaff';
     }
 
     render() {
