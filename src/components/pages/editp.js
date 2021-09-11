@@ -161,6 +161,14 @@ export default class Editp extends Component {
                             onChange={this.onChangeAge}
                         />
                     </div>
+                    <div className="col-md-3">
+                        <label for="validationCustom04" class="form-label">Gender</label>
+                        <select class="form-select" id="validationCustom04" required value={this.state.gender} onChange={this.onChangeGender}>
+                            <option selected disabled value="">Choose</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
                     <div className="form-group">
                         <label>NIC: </label>
                         <input

@@ -1,0 +1,70 @@
+.addMedicineTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.viewMedicineTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.createPatientTitle{
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.addMedicinePage{
+	background: url("https://t3.ftcdn.net/jpg/02/07/09/06/360_F_207090644_pzixjQM0iSPLdTTAjDT0DX4nXVMz7Non.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#addMedicineForm{
+	max-width: 800px;
+	padding: 16px;
+	background-color: white;
+}
+
+.viewMedicinePage{
+	background: url("https://www.rightmedicinepharmacy.co.uk/wp-content/uploads/2019/11/Right-Medicine-Pharmacy-Services-4.png") no-repeat center center fixed;
+	background-position: center;
+    height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#viewMedicineForm{
+	max-width: 1200px;
+  padding: 16px;
+  background-color: white;
+}
+
+.editMedicinePage{
+	background-image: url("https://www.principle-pharmacy.com/wp-content/uploads/2020/11/Untitled-11.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#editMedicineForm{
+	max-width: 800px;
+  padding: 16px;
+  background-color: white;
+}
+
+.createPatientPage{
+  	background: url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_643024904_20001334181884391236_361786.jpg") no-repeat center center fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#createPatientForm{
+	max-width: 800px;
+	padding: 16px;
+	background-color: white;
+}

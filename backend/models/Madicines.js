@@ -25,21 +25,19 @@ const madicineSchema = new Schema({
     bprice: {
         type: Number,
         required: true,
-       
+
         trim: true,
     },
     edate: {
         type: Date,
         required: true,
-        
 
-        
     },
     bdate: {
         type: Date,
         required: true,
 
-       
+
     },
     dosage: {
         type: Number,
