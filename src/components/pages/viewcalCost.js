@@ -15,7 +15,7 @@ const Cost = props =>(
         <td>{props.cost.totalCost}</td>
 
         <td>
-            <a href="#" onClick={() => { props.deleteCost(props.cost._id) }}>delete</a>
+            <a href="#" id="buttonlab" onClick={() => { props.deleteCost(props.cost._id) }}>DELETE</a>
         </td>
     </tr>
 )
@@ -46,6 +46,7 @@ export default class viewcalCost extends Component {
         this.setState({
             cost: this.state.cost.filter(sdl => sdl._id !== id)
         })
+        alert("Delete Patient Details?")
     }
 
     costDetailsList() {
@@ -58,7 +59,7 @@ export default class viewcalCost extends Component {
         return (
             <div className='viewcalCost'>
                 <div className='container'>
-                    <h3>Patient Cost Details</h3>
+                    <h3 className="addlabTitle">Patient Cost Details</h3>
                     <table className="table">
                         <thead className="thead-light">
                         <tr>

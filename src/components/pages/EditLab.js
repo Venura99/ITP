@@ -106,13 +106,14 @@ export default class EditLab extends Component {
     axios.post('http://localhost:5000/lab/update/' + this.props.match.params.id, lab)
       .then(res => console.log(res.data));
 
-    window.location = '/';
+    window.location = '/LabView';
+   
   }
 
   render() {
     return (
       <div className="EditLab">
-        <h3>Edit Lab Log</h3>
+        <h3 className="addlabTitle">Edit Lab Log</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label><b>Patient Name: </b></label>
@@ -133,14 +134,7 @@ export default class EditLab extends Component {
               onChange={this.onChangeAge}
             />
           </div>
-          <div class="form-group">
-            <label><b>Gender: </b></label>
-            <select value={this.state.Gender} onChange={this.onChangeGender} >
-              <option selected disabled value="">Select</option>
-              <option>Male</option>
-              <option>Female</option>
-
-            </select></div>
+          
 
 
           <div className="form-group">
@@ -182,8 +176,8 @@ export default class EditLab extends Component {
             </div>
           </div>
 
-          <div className="form-group">
-            <input type="submit" value="UPDATE LAB DETAILS" className="btn btn-primary" />
+          <div className="form">
+            <input type="submit" id="btn7" value="UPDATE LAB DETAILS" className="btn btn-primary" />
           </div>
         </form>
       </div>

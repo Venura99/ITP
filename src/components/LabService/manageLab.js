@@ -11,10 +11,10 @@ import { ManageLabContainer, ManageLabH1, ManageLabWrapper, ManageLabCard, Manag
 function ManageLab() {
     return (
         <div className="manageLab">
-            <h3>HOSPITAL LAB MANAGEMENT</h3>
+            <h3 className="manageLabtital">HOSPITAL LAB MANAGEMENT </h3>
 
             <ManageLabContainer id='manageLab'>
-                <ManageLabH1>Select task to continue</ManageLabH1>
+                <ManageLabH1>Select task to continue</ManageLabH1><br/>
                 <ManageLabWrapper>
                     <ManageLabCard>
                         <ManageLabH2><b>ADD PATIENT DETAILS and LAB DETAILS</b></ManageLabH2>

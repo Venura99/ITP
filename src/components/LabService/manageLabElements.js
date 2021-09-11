@@ -15,7 +15,7 @@ export const ManageLabContainer = styled.div`
     }
 `
 export const ManageLabWrapper = styled.div`
-    max-width: 1000px;
+    max-width: 500px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -33,7 +33,7 @@ export const ManageLabWrapper = styled.div`
 
 export const ManageLabCard = styled.div`
     background: transparent;
-    background: rgba(0,0,0,.5);
+    background: rgba(174, 214, 238, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -68,6 +68,6 @@ export const ManageLabH1 = styled.h1`
 export const ManageLabH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;
-    color: white;
+    color: black;
     font-style: italic;
 `

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-//import './lab.css';
+import './lab.css';
 
 export default class AddLab extends Component {
     constructor(props) {
@@ -90,12 +90,13 @@ export default class AddLab extends Component {
         axios.post('http://localhost:5000/lab/add', lab)
             .then(res => console.log(res.data));
 
-        window.location = '/';
+        window.location = '/manageLab';
+        
     }
     render() {
         return (
             <div className="AddLab">
-                <h3>ADD LAB RESULT</h3>
+                <h3 className="addlabTitle">ADD LAB RESULT</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label><b>Patient Name: </b></label>
