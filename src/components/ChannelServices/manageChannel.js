@@ -9,7 +9,7 @@ import { ManageChannelContainer, ManageChannelH1, ManageChannelWrapper, ManageCh
 function ManageChannel() {
     return (
         <div className="manageChannel">
-            <h3>CHANNELING SERVICES MANAGEMENT</h3>
+            <h3 className="mangApp">CHANNELING SERVICES MANAGEMENT</h3>
 
             <ManageChannelContainer id='manageChannel'>
                 <ManageChannelH1>Select task to continue</ManageChannelH1>

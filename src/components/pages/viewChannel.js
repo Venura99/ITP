@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-//import './view.css';
+import './viewChnel.css';
 
 const Channeling = props => (
   <tr>
@@ -15,7 +15,7 @@ const Channeling = props => (
     <td>{props.Channeling.HospitalFee}</td>
     <td>{props.Channeling.ChannelFee}</td>
     <td>
-      <Link to={"/editChannel/" + props.Channeling._id}>view</Link> | <a href="#" id="b4" onClick={() => { props.deleteChannel(props.Channeling._id) }}>delete</a>
+      <Link to={"/editChannel/" + props.Channeling._id}>view</Link> | <a href="#" id="ba4" onClick={() => { props.deleteChannel(props.Channeling._id) }}>delete</a>
     </td>
   </tr>
 )
@@ -59,8 +59,8 @@ export default class ViewChannel extends Component {
   render() {
     return (
       <div className="viewChnnelpg">
-        <h2>Channelings</h2><br />
-        <table className="table" className="container">
+        <h2 className="viewapp">Channelings</h2><br />
+        <table className="table" className="container" >
           <thead className="thead-light">
             <tr>
               <th>Channel No</th>
@@ -81,7 +81,7 @@ export default class ViewChannel extends Component {
         </table>
         <br /><br /><br />
         <div class="col text-center">
-          <input type="button" value="GENERATE PATIENT CHANNELING REPORT" className="btn btn-primary" id="b3"></input>
+          <input type="button" value="GENERATE PATIENT CHANNELING REPORT" className="btn btn-primary" id="ba3"></input>
         </div>
       </div>
 

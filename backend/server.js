@@ -33,6 +33,7 @@ const labRouter = require('./routes/lab');
 const costRouter = require('./routes/cost');
 
 const madicinesRouter = require('./routes/madicines');
+const exercisesRouter = require('./routes/exercises');
 
 
 app.use('/staff', staffRouter);
@@ -49,8 +50,9 @@ app.use('/cost', costRouter);
 app.use('/register', registerRouter);
 app.use('/tfee', tfeeRouter);
 
-
 app.use('/madicines', madicinesRouter);
+app.use('/exercises', exercisesRouter);
+
 app.use('/users', require('./routes/auth'));
 
 app.listen(port, () => {

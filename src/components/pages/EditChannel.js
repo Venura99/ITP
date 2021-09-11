@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-//import './Edit.css';
+import './EditChnel.css';
 
 export default class EditChannel extends Component {
   constructor(props) {
@@ -123,7 +123,7 @@ export default class EditChannel extends Component {
     return (
       <div className="EditChnel"><br /><br />
         <form onSubmit={this.onSubmit} className="container" id="Editform">
-          <h3>Update channel</h3>
+          <h3 className="updateapp">Update channel</h3>
           <div className="form-group">
             <label>Patient Name: </label>
             <input type="text"
@@ -161,7 +161,6 @@ export default class EditChannel extends Component {
               value={this.state.DoctorName}
               onChange={this.onChangeDoctorName}
             />
-
           </div><br />
           <div className="form-group">
             <label>date: </label>
@@ -176,7 +175,7 @@ export default class EditChannel extends Component {
 
           <div className="form-group">
             <div class="col text-center">
-              <input type="submit" value="UPDATE APPOINTMENT" className="btn btn-primary" id="b2" />
+              <input type="submit" value="UPDATE APPOINTMENT" className="btn btn-primary" id="ba2" />
             </div>
           </div>
         </form>

@@ -5,10 +5,13 @@ import axios from 'axios';
 const Lab = props => (
   <tr>
     <td>{props.lab.patientname}</td>
+    <td>{props.lab.gender}</td>
     <td>{props.lab.testdate}</td>
+    <td>{props.lab.mobilenumber}</td>
     <td>{props.lab.testtype}</td>
+    
     <td>
-      <Link to={"/editLab/" + props.lab._id}>view</Link> | <a href="#" id="b9" onClick={() => { props.deleteLab(props.lab._id) }}>delete</a>
+      <Link to={"/editLab/" + props.lab._id}>VIEW</Link> &nbsp;&nbsp;| &nbsp;&nbsp; <a href="#" id="buttonlab" onClick={() => { props.deleteLab(props.lab._id) }}>DELETE</a>
     </td>
   </tr>
 )
@@ -39,7 +42,9 @@ export default class LabView extends Component {
     this.setState({
       lab: this.state.lab.filter(el => el._id !== id)
     })
+    alert("Delete Patient Details?")
   }
+  
 
   LabView() {
     return this.state.lab.map(currentlab => {
@@ -50,12 +55,14 @@ export default class LabView extends Component {
   render() {
     return (
       <div className="LabView">
-        <h3>View lab details</h3>
-        <table className="table">
+        <h3 className="viewlabTital">View lab details</h3>
+        <table className="table" className="container">
           <thead className="thead-light">
             <tr>
               <th>Patient Name</th>
+              <th>Gender</th>
               <th>Test Date</th>
+              <th>Mobile Number</th>
               <th>Test Type</th>
               <th>Actions</th>
             </tr>
