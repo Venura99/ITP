@@ -17,5 +17,8 @@ p{
 	color: black;
 	margin: 0;
 	height: 60px;
+	justify-content: center;
+	display: flex;
+	font-size: 3rem;
 }
 

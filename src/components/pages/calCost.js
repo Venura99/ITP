@@ -224,7 +224,7 @@ export default class calCost extends Component {
               <input type="submit" value="ADD ENTRY TO DATABASE" id="btnlab3" className="btn btn-primary" onClick={this.getTotal} />
             </div>
             <br />
-            <div className="form-btn2">
+            <div className="form-btn">
               <input type="submit" value="GENARATE REPORT" id="btnlab2" className="btn btn-primary" />
             </div>
           </center>
