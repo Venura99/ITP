@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { Component, useState } from 'react';
 import "react-datepicker/dist/react-datepicker.css";
-//import './lab.css';
+import './lab.css';
 
 
 export default class calCost extends Component {
@@ -122,9 +122,9 @@ export default class calCost extends Component {
   render() {
     return (
       <div className="calCost">
-        <h2>PATIENT CHARGE CALCULATION</h2>
+        <h3 className="addlabTitle">PATIENT LAB REPORT CHARGE CALCULATION</h3><br/>
         <form onSubmit={this.onSubmit}>
-          <div className="form-group">
+          <div className="form-labgroup3">
             <label><b>Patient Name: </b></label>
             <input type="text"
               required
@@ -137,7 +137,7 @@ export default class calCost extends Component {
           </div>
 
 
-          <div class="form-group">
+          <div class="form-labgroup3">
             <label><b>Urine Test: </b></label>
             <select value={this.state.urineTest} onChange={this.onChangeUrineTest} >
               <option selected disabled value="">Select</option>
@@ -146,7 +146,7 @@ export default class calCost extends Component {
 
             </select></div>
 
-          <div class="form-group">
+          <div class="form-labgroup3">
             <label><b>Full Blood Count: </b></label>
             <select value={this.state.Fullbloodcount} onChange={this.onChangeFullbloodcount} >
               <option selected disabled value="">Select</option>
@@ -156,7 +156,7 @@ export default class calCost extends Component {
             </select></div>
 
 
-          <div class="form-group">
+          <div class="form-labgroup3">
             <label><b>THS: </b></label>
             <select value={this.state.Ths} onChange={this.onChangeThs} >
               <option selected disabled value="">Select</option>
@@ -166,7 +166,7 @@ export default class calCost extends Component {
             </select></div>
 
 
-          <div class="form-group">
+          <div class="form-labgroup3">
             <label><b>Cholestarol: </b></label>
             <select value={this.state.Cholestarol} onChange={this.onChangeCholestarol} >
               <option selected disabled value="">Select</option>
@@ -176,7 +176,7 @@ export default class calCost extends Component {
 
             </select></div>
 
-          <div class="form-group">
+          <div class="form-labgroup3">
             <label><b>Uric Acid: </b></label>
             <select value={this.state.Uricacid} onChange={this.onChangeUricacid} >
               <option selected disabled value="">Select</option>
@@ -186,7 +186,7 @@ export default class calCost extends Component {
             </select></div>
 
 
-          <div class="form-group">
+          <div class="form-labgroup3">
             <label><b>PCR: </b></label>
             <select value={this.state.Pcr} onChange={this.onChangePcr} >
               <option selected disabled value="">Select</option>
@@ -196,7 +196,7 @@ export default class calCost extends Component {
             </select></div>
 
 
-          <div class="form-group">
+          <div class="form-labgroup3">
             <label><b>Antigen: </b></label>
             <select value={this.state.Antigen} onChange={this.onChangeAntigen} >
               <option selected disabled value="">Select</option>
@@ -221,11 +221,11 @@ export default class calCost extends Component {
           </center>
           <center>
             <div className="form-btn">
-              <input type="submit" value="ADD ENTRY TO DATABASE" id="btn3" className="btn btn-primary" onClick={this.getTotal} />
+              <input type="submit" value="ADD ENTRY TO DATABASE" id="btnlab3" className="btn btn-primary" onClick={this.getTotal} />
             </div>
             <br />
-            <div className="form-btn2">
-              <input type="submit" value="GENARATE REPORT" id="btn2" className="btn btn-primary" />
+            <div className="form-btn">
+              <input type="submit" value="GENARATE REPORT" id="btnlab2" className="btn btn-primary" />
             </div>
           </center>
         </form>

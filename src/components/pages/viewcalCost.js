@@ -59,7 +59,7 @@ export default class viewcalCost extends Component {
         return (
             <div className='viewcalCost'>
                 <div className='container'>
-                    <h3 className="addlabTitle">Patient Cost Details</h3>
+                    <h3 className="addlabTitle">Patient Cost Details</h3><br/>
                     <table className="table">
                         <thead className="thead-light">
                         <tr>

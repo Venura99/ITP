@@ -96,9 +96,9 @@ export default class AddLab extends Component {
     render() {
         return (
             <div className="AddLab">
-                <h3 className="addlabTitle">ADD LAB RESULT</h3>
+                <h3 className="addlabTitle">ADD LAB RESULT</h3><br/><br/>
                 <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
+                    <div className="form-labgroup1">
                         <label><b>Patient Name: </b></label>
                         <input type="text"
                             required
@@ -109,7 +109,7 @@ export default class AddLab extends Component {
 
 
                     </div>
-                    <div className="form-group">
+                    <div className="form-labgroup1">
                         <label><b>Age: </b></label>
                         <input type="text"
                             required
@@ -119,7 +119,7 @@ export default class AddLab extends Component {
                             onChange={this.onChangeAge}
                         />
                     </div>
-                    <div class="form-group">
+                    <div class="form-labgroup1">
                         <label><b>Gender: </b></label>
                         <select value={this.state.Gender} onChange={this.onChangeGender} >
                             <option selected disabled value="">Select</option>
@@ -129,7 +129,7 @@ export default class AddLab extends Component {
                         </select></div>
 
 
-                    <div className="form-group">
+                    <div className="form-labgroup1">
                         <label><b>Mobile Number: </b></label>
                         <input type="text"
                             required
@@ -141,7 +141,7 @@ export default class AddLab extends Component {
                             onChange={this.onChangeMobilenumber}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-labgroup1">
                         <label><b>Test Types: </b></label>
                         <input type="text"
                             required
@@ -151,7 +151,7 @@ export default class AddLab extends Component {
                             onChange={this.onChangeTesttype}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-labgroup1">
                         <label><b>Test Result: </b></label>
                         <input type="text"
                             required
@@ -161,7 +161,7 @@ export default class AddLab extends Component {
                             onChange={this.onChangeTestresult}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-labgroup1">
                         <label><b>Test Date: </b></label>
                         <div>
                             <DatePicker
@@ -169,10 +169,11 @@ export default class AddLab extends Component {
                                 onChange={this.onChangeTestdate}
                             />
                         </div>
+                    
+                    <br/><br/>
+                    <div className="labform">
+                        <input type="submit" value="ADD RESULT DETAILS" className="btn btn-primary" id="btnlab1" />
                     </div>
-
-                    <div className="form">
-                        <input type="submit" value="ADD RESULT DETAILS" className="btn btn-primary" id="btn1" />
                     </div>
                 </form>
             </div>
