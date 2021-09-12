@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import '../FinanceManagement/financeManage.css';
 
 const Income = props => (
     <tr>
@@ -9,7 +10,7 @@ const Income = props => (
         <td>{props.income.Value}</td>
 
         <td>
-            <Link to={"/edit-income.component/" + props.income._id}>edit</Link> | <a href="#" onClick={() => { props.deleteIncome(props.income._id) }}>delete</a>
+            <Link className='linkedit' to={"/edit-income.component/" + props.income._id}>edit</Link> | <a className='linkdelete' href="#" onClick={() => { props.deleteIncome(props.income._id) }}>delete</a>
         </td>
     </tr>
 )
@@ -51,14 +52,18 @@ export default class IncomeList extends Component {
 
     render() {
         return (
-            <div>
-                <h3>Income Deatils</h3>
-                <table className="table">
+            <div className='viewInc'>
+                <br />
+                <div className='head'>
+                    <h3>Income Deatils</h3>
+                </div>
+                <table className="table" className="container">
                     <thead className="thead-light">
                         <tr>
                             <th>ID</th>
                             <th>Department</th>
                             <th>Value</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>

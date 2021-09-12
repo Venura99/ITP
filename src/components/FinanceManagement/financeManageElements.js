@@ -6,7 +6,7 @@ export const ManageContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #e6ccff;
+
     @media screen and (max-width: 768px){
         height: 1100px;
     }
@@ -32,7 +32,7 @@ export const ManageWrapper = styled.div`
 `
 
 export const ManageCard = styled.div`
-    background: #fff;
+    background: #00008b;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -58,6 +58,8 @@ export const ManageIcon = styled.img`
 
 export const ManageH1 = styled.h1`
     font-size: 2.5rem;
+    -webkit-text-stroke: 0.8px rgb(219, 216, 216);
+    font-weight: bolder;
     color: black;
     margin-bottom: 32px;
     @media screen and (max-width: 400px) {
@@ -66,6 +68,8 @@ export const ManageH1 = styled.h1`
 `
 
 export const ManageH2 = styled.h2`
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
+    color: white;
+
 `

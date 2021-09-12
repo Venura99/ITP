@@ -215,7 +215,7 @@ export default class calcExpInc extends Component {
 
                 <form className="row gy-2 gx-3 align-items-center" className='container' id="addStaffForm" onSubmit={this.onSubmit}>
 
-                    <h3 className='addStaffTitle'>Grand Total EXPENSES</h3>
+                    <h3 className='addStaffTitle'>Grand Total Expenses</h3>
                     <div  >
                         <label for="autoSizingInput">Department </label>
                         <input type="text"

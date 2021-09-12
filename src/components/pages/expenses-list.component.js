@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import '../FinanceManagement/financeManage.css';
 
 const Expenses = props => (
     <tr>
@@ -10,7 +11,7 @@ const Expenses = props => (
         <td>{props.expenses.Value}</td>
 
         <td>
-            <Link to={"/edit-expenses.component/" + props.expenses._id}>edit</Link> | <a href="#" onClick={() => { props.deleteExpense(props.expenses._id) }}>delete</a>
+            <Link className='linkedit' to={"/edit-expenses.component/" + props.expenses._id}>edit</Link> | <a className='linkdelete' href="#" onClick={() => { props.deleteExpense(props.expenses._id) }}>delete</a>
         </td>
     </tr>
 )
@@ -52,7 +53,7 @@ export default class ExpensesList extends Component {
 
     render() {
         return (
-            <div className='viewStaffPage'>
+            <div className='viewExp'>
                 <h3>Expenses Details</h3>
                 <table className="table" className="container">
                     <thead className="thead-light" >
@@ -61,6 +62,7 @@ export default class ExpensesList extends Component {
                             <th>Type</th>
                             <th>Department</th>
                             <th>Value</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
