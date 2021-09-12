@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './calcExp.css';
+//import './calcExp.css';
 
 export default class calcExpInc extends Component {
     constructor(props) {
         super(props);
 
-        
+
         this.onChangeD1 = this.onChangeD1.bind(this);
         this.onChangeE1 = this.onChangeE1.bind(this);
         this.onChangeD2 = this.onChangeD2.bind(this);
@@ -33,30 +33,30 @@ export default class calcExpInc extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-        
-            d1:'',
-            e1:'',
-            d2:'',
-            e2:'',
-            d3:'',
-            e3:'',
-            d4:'',
-            e4:'',
-            dep1:'',
-            i1:'',
-            dep2:'',
-            i2:'',
-            dep3:'',
-            i3:'',
-            dep4:'',
-            i4:'',
-            totalExp:'',
-            totalInc:'',
-            ProfLst:'',
+
+            d1: '',
+            e1: '',
+            d2: '',
+            e2: '',
+            d3: '',
+            e3: '',
+            d4: '',
+            e4: '',
+            dep1: '',
+            i1: '',
+            dep2: '',
+            i2: '',
+            dep3: '',
+            i3: '',
+            dep4: '',
+            i4: '',
+            totalExp: '',
+            totalInc: '',
+            ProfLst: '',
         }
     }
 
-   
+
 
     onChangeD1(e) {
         this.setState({
@@ -170,9 +170,9 @@ export default class calcExpInc extends Component {
 
     onChangeProfLst(e) {
         this.setState({
-          ProfLst: e.target.value
+            ProfLst: e.target.value
         });
-      }
+    }
 
     onSubmit(e) {
         e.preventDefault();
@@ -212,21 +212,21 @@ export default class calcExpInc extends Component {
         return (
 
             <div className='addStaffPage'>
-         
+
                 <form className="row gy-2 gx-3 align-items-center" className='container' id="addStaffForm" onSubmit={this.onSubmit}>
-                     
-                <h3 className='addStaffTitle'>Grand Total EXPENSES</h3>
+
+                    <h3 className='addStaffTitle'>Grand Total EXPENSES</h3>
                     <div  >
-                        <label  for="autoSizingInput">Department </label>
+                        <label for="autoSizingInput">Department </label>
                         <input type="text"
                             required
                             className="form-control"
                             value={this.state.d1}
                             onChange={this.onChangeD1}
                         />
-                        
+
                     </div>
-                  
+
                     <div >
                         <label class="visually-hidden" for="autoSizingInput"> </label>
                         <input type="text"
@@ -237,21 +237,21 @@ export default class calcExpInc extends Component {
                             onChange={this.onChangeE1}
                         />
                     </div>
-                    
-                
 
-                <br/> <br/>   
 
-               
-                   <div  >
-                        <label  for="autoSizingInput">Department </label>
+
+                    <br /> <br />
+
+
+                    <div  >
+                        <label for="autoSizingInput">Department </label>
                         <input type="text"
                             required
                             className="form-control"
                             value={this.state.d2}
                             onChange={this.onChangeD2}
                         />
-                        
+
                     </div>
                     <div >
                         <label class="visually-hidden" for="autoSizingInput"> </label>
@@ -263,22 +263,22 @@ export default class calcExpInc extends Component {
                             onChange={this.onChangeE2}
                         />
                     </div>
-                    
 
-                   
 
-                <br/> <br/> 
-                 
-              
-                <div  >
-                        <label  for="autoSizingInput">Department </label>
+
+
+                    <br /> <br />
+
+
+                    <div  >
+                        <label for="autoSizingInput">Department </label>
                         <input type="text"
                             required
                             className="form-control"
                             value={this.state.d3}
                             onChange={this.onChangeD3}
                         />
-                        
+
                     </div>
                     <div >
                         <label class="visually-hidden" for="autoSizingInput"> </label>
@@ -290,21 +290,21 @@ export default class calcExpInc extends Component {
                             onChange={this.onChangeE3}
                         />
                     </div>
-                   
-                    
 
-               <br/> <br/> 
 
-               
-                   <div>
-                        <label  for="autoSizingInput">Department </label>
+
+                    <br /> <br />
+
+
+                    <div>
+                        <label for="autoSizingInput">Department </label>
                         <input type="text"
                             required
                             className="form-control"
                             value={this.state.d4}
                             onChange={this.onChangeD4}
                         />
-                        
+
                     </div>
                     <div >
                         <label class="visually-hidden" for="autoSizingInput"> </label>
@@ -318,12 +318,12 @@ export default class calcExpInc extends Component {
                     </div>
 
                     <div >
-                        <label  for="autoSizingInput">Grand Total of All Expenses</label>
+                        <label for="autoSizingInput">Grand Total of All Expenses</label>
                         <input type="text"
                             placeholder="Grand Total Expenses"
                             required
                             className="form-control"
-                            value={(parseInt(this.state.e1)+parseInt(this.state.e2)+parseInt(this.state.e3)+parseInt(this.state.e4))}
+                            value={(parseInt(this.state.e1) + parseInt(this.state.e2) + parseInt(this.state.e3) + parseInt(this.state.e4))}
                             onChange={this.onChangeTotalExp}
                         />
                     </div>
@@ -331,16 +331,16 @@ export default class calcExpInc extends Component {
                     <h3>Grand Total Income</h3>
 
                     <div  >
-                        <label  for="autoSizingInput">Department </label>
+                        <label for="autoSizingInput">Department </label>
                         <input type="text"
                             required
                             className="form-control"
                             value={this.state.dep1}
                             onChange={this.onChangeDep1}
                         />
-                        
+
                     </div>
-                  
+
                     <div >
                         <label class="visually-hidden" for="autoSizingInput"> </label>
                         <input type="text"
@@ -351,21 +351,21 @@ export default class calcExpInc extends Component {
                             onChange={this.onChangeI1}
                         />
                     </div>
-                    
-                
 
-                <br/> <br/>   
 
-               
-                   <div  >
-                        <label  for="autoSizingInput">Department </label>
+
+                    <br /> <br />
+
+
+                    <div  >
+                        <label for="autoSizingInput">Department </label>
                         <input type="text"
                             required
                             className="form-control"
                             value={this.state.dep2}
                             onChange={this.onChangeDep2}
                         />
-                        
+
                     </div>
                     <div >
                         <label class="visually-hidden" for="autoSizingInput"> </label>
@@ -377,22 +377,22 @@ export default class calcExpInc extends Component {
                             onChange={this.onChangeI2}
                         />
                     </div>
-                    
 
-                   
 
-                <br/> <br/> 
-                 
-              
-                <div  >
-                        <label  for="autoSizingInput">Department </label>
+
+
+                    <br /> <br />
+
+
+                    <div  >
+                        <label for="autoSizingInput">Department </label>
                         <input type="text"
                             required
                             className="form-control"
                             value={this.state.dep3}
                             onChange={this.onChangeDep3}
                         />
-                        
+
                     </div>
                     <div >
                         <label class="visually-hidden" for="autoSizingInput"> </label>
@@ -404,21 +404,21 @@ export default class calcExpInc extends Component {
                             onChange={this.onChangeI3}
                         />
                     </div>
-                   
-                    
 
-               <br/> <br/> 
 
-               
-                   <div>
-                        <label  for="autoSizingInput">Department </label>
+
+                    <br /> <br />
+
+
+                    <div>
+                        <label for="autoSizingInput">Department </label>
                         <input type="text"
                             required
                             className="form-control"
                             value={this.state.dep4}
                             onChange={this.onChangeDep4}
                         />
-                        
+
                     </div>
                     <div >
                         <label class="visually-hidden" for="autoSizingInput"> </label>
@@ -432,37 +432,37 @@ export default class calcExpInc extends Component {
                     </div>
 
                     <div >
-                        <label  for="autoSizingInput">Grand Total of All Income</label>
+                        <label for="autoSizingInput">Grand Total of All Income</label>
                         <input type="text"
                             placeholder="Grand Total Income"
                             required
                             className="form-control"
-                            value={(parseInt(this.state.i1)+parseInt(this.state.i2)+parseInt(this.state.i3)+parseInt(this.state.i4))}
+                            value={(parseInt(this.state.i1) + parseInt(this.state.i2) + parseInt(this.state.i3) + parseInt(this.state.i4))}
                             onClick={this.total}
                             onChange={this.onChangeTotalInc}
                         />
                     </div>
                     <h2>Profit or Loss</h2>
                     <div >
-                  <label  for="autoSizingInput">Profit/Loss</label>
-                  <input type="text"
-                      placeholder="Profit or Lost"
-                      required
-                      className="form-control"
-                      value={(parseInt(this.state.i1)+parseInt(this.state.i2)+parseInt(this.state.i3)+parseInt(this.state.i4))-(parseInt(this.state.e1)+parseInt(this.state.e2)+parseInt(this.state.e3)+parseInt(this.state.e4))}
-                      onChange={this.onChangeProfLst}
-                  />
-              </div>
+                        <label for="autoSizingInput">Profit/Loss</label>
+                        <input type="text"
+                            placeholder="Profit or Lost"
+                            required
+                            className="form-control"
+                            value={(parseInt(this.state.i1) + parseInt(this.state.i2) + parseInt(this.state.i3) + parseInt(this.state.i4)) - (parseInt(this.state.e1) + parseInt(this.state.e2) + parseInt(this.state.e3) + parseInt(this.state.e4))}
+                            onChange={this.onChangeProfLst}
+                        />
+                    </div>
 
 
-                    <br/> <br/>  <br/> <br/> 
+                    <br /> <br />  <br /> <br />
                     <div >
                         <a href="/calcFront"><input type="submit" value="Calculate" className="searchStaffBtn" /></a>
                     </div>
                 </form>
 
-                
-           
+
+
             </div>
         )
     }

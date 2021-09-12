@@ -15,7 +15,7 @@ const Register = props => (
         <td>{props.register.email}</td>
         <td>{props.register.username}</td>
         <td>{props.register.password}</td>
-
+       
         <td>
             <Link to={"/editp/" + props.register._id}>edit</Link> | <a href="#" onClick={() => { props.deleteRegister(props.register._id) }}>delete</a>
         </td>
@@ -59,21 +59,23 @@ export default class Viewp extends Component {
 
     render() {
         return (
-            <div>
-                <h3>VACCINATED PATIENTS' LIST</h3>
-                <table className="table">
+            <div className='addCovidPage' id="viewTable">
+            <br />
+                <h3 className="addcovid1Title">VACCINATED PATIENTS' LIST</h3>
+                <table className="table" id="displayTable">
                     <thead className="thead-light">
-                        <tr>
-                            <th>Patient ID</th>
-                            <th>Name</th>
-                            <th>Address</th>
-                            <th>Age</th>
-                            <th>Gender</th>
-                            <th>NIC</th>
-                            <th>Phone</th>
-                            <th>Email</th>
-                            <th>Username</th>
-                            <th>Password</th>
+                        <tr id="tablist">
+                            <th className="viewlist">Patient ID</th>
+                            <th className="viewlist">Name</th>
+                            <th className="viewlist">Address</th>
+                            <th className="viewlist">Age</th>
+                            <th className="viewlist">Gender</th>
+                            <th className="viewlist">NIC</th>
+                            <th className="viewlist">Phone</th>
+                            <th className="viewlist">Email</th>
+                            <th className="viewlist">Username</th>
+                            <th className="viewlist">Password</th>
+                            
                         </tr>
                     </thead>
                     <tbody>

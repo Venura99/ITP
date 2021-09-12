@@ -26,10 +26,10 @@ const NavMain = ({ auth: { isAuthenticated, loading }, logout }) => {
     const guestLinks = (
         <ul className="navMain-links">
             <li>
-                <p className="link"><Link to="/register">Register</Link></p>
+                <p className="navMainlink"><Link to="/register">Register</Link></p>
             </li>
             <li>
-                <p className="link"><Link to="/login">Login</Link></p>
+                <p className="navMainlink"><Link to="/login">Login</Link></p>
             </li>
         </ul>
     );

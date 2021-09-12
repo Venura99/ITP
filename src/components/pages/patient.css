@@ -30,13 +30,13 @@
 
 }
 
-.form{
-    width: 60%;
+/*.form{
+    width: 70%;
     padding: 10px;
     margin: 0 auto;
     display: grid;
     max-width: 500px;  
-}
+}*/
 
 #badd{
     background-color: #071a52;
@@ -174,9 +174,9 @@
     max-width: 800px;
 }
 
-p{
+/*p{
     font-size: 30px;
-}
+}*/
 
 #table {
     border-collapse: collapse;

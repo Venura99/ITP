@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import '../FinanceManagement/financeManage.css';
+//import '../FinanceManagement/financeManage.css';
 
 export default class CreateExpenses extends Component {
     constructor(props) {

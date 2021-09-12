@@ -4,30 +4,40 @@
 }
 
 .addStaffTitle{
+	font-size: 50px;
+	text-align: center;
 	color: black;
 	margin: 0;
 	height: 60px;
 }
 
 .viewStaffTitle{
+	font-size: 50px;
+	text-align: center;
 	color: black;
 	margin: 0;
 	height: 60px;
 }
 
 .calcSalaryTitle{
+	font-size: 50px;
+	text-align: center;
 	color: black;
 	margin: 0;
 	height: 60px;
 }
 
 .searchStaffTitle{
+	font-size: 50px;
+	text-align: center;
 	color: black;
 	margin: 0;
 	height: 60px;
 }
 
 .searchSalaryTitle{
+	font-size: 50px;
+	text-align: center;
 	color: black;
 	margin: 0;
 	height: 60px;
@@ -104,8 +114,8 @@
 }
 
 #calcForm{
-	opacity: 0.95;
-	padding:40px;
+	opacity: 0.9;
+	padding:80px;
     margin: 0 auto;
     display: grid;
 	max-width: 850px;
@@ -137,7 +147,7 @@
 }
 
 #addStaffForm{
-	max-width: 1240px;
+	max-width: 800px;
 	opacity: 0.95;
     background:rgb(54, 160, 149);
     padding: 40px;

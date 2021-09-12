@@ -24,11 +24,11 @@ const Landing = ({ isAuthenticated }) => {
                     <p className='landingPara'>Advanced Medicine. Compassionate Care.</p>
                     <br />
                     <div className="buttons">
-                        <Link to="/register" className="btn">
+                        <Link className="loginLink" to="/register" className="btn">
                             Sign Up
                         </Link>
                         <br />
-                        <Link to="/login" className="btn">
+                        <Link className="loginLink" to="/login" className="btn">
                             Login
                         </Link>
                     </div>

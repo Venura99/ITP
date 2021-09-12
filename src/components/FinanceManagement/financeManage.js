@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './financeManage.css';
+//import './financeManage.css';
 import addExp from '../../images/expenses.jpg';
 import addInc from '../../images/income.jpg';
 import findExp from '../../images/findExp.jpg';

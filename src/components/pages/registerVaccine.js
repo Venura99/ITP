@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import './registerVaccine.css';
 
 
 export default class RegisterVaccine extends Component {
@@ -125,11 +126,13 @@ export default class RegisterVaccine extends Component {
     render() {
 
         return (
-            <div className='container'>
-                <h3>REGISTER FOR VACCINATION</h3>
+            <div className='addCovidPage'>
+            <br />
+            <div className='container' id="addRegisterForm">
+                <h3 className="addcovidTitle">REGISTER FOR VACCINATION</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label>Patient ID: </label>
+                        <label className="textColour">Patient ID: </label>
                         <input type="text"
                             required
                             className="form-control"
@@ -139,7 +142,7 @@ export default class RegisterVaccine extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Name: </label>
+                        <label className="textColour">Name: </label>
                         <input type="text"
                             required
                             className="form-control"
@@ -149,7 +152,7 @@ export default class RegisterVaccine extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Address: </label>
+                        <label className="textColour">Address: </label>
                         <input type="text"
                             required
                             className="form-control"
@@ -159,7 +162,7 @@ export default class RegisterVaccine extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Age: </label>
+                        <label className="textColour">Age: </label>
                         <input
                             type="text"
                             className="form-control"
@@ -169,8 +172,8 @@ export default class RegisterVaccine extends Component {
                         />
                     </div>
 
-                    <div class="col-md-3">
-                        <label for="validationCustom04" class="form-label">Gender</label>
+                    <div class="form-group">
+                        <label for="validationCustom04" class="form-label" className="textColour">Gender</label>
                         <select class="form-select" id="validationCustom04" required value={this.state.gender} onChange={this.onChangeGender}>
                             <option selected disabled value="">Choose</option>
                             <option>Male</option>
@@ -178,7 +181,7 @@ export default class RegisterVaccine extends Component {
                         </select></div>
 
                     <div className="form-group">
-                        <label>NIC: </label>
+                        <label className="textColour">NIC: </label>
                         <input
                             type="text"
                             className="form-control"
@@ -188,7 +191,7 @@ export default class RegisterVaccine extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Phone: </label>
+                        <label className="textColour">Phone: </label>
                         <input
                             type="text"
                             className="form-control"
@@ -198,7 +201,7 @@ export default class RegisterVaccine extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Email: </label>
+                        <label className="textColour">Email: </label>
                         <input
                             type="email"
                             className="form-control"
@@ -208,7 +211,7 @@ export default class RegisterVaccine extends Component {
                         />
                     </div>
                     <div className="form-group">
-                        <label>Username: </label>
+                        <label className="textColour">Username: </label>
                         <div>
                             <input
                                 type="text"
@@ -220,7 +223,7 @@ export default class RegisterVaccine extends Component {
                         </div>
                     </div>
                     <div className="form-group">
-                        <label>Password: </label>
+                        <label className="textColour">Password: </label>
                         <input
                             type="password"
                             className="form-control"
@@ -229,12 +232,12 @@ export default class RegisterVaccine extends Component {
                             placeholder="Enter password"
                         />
                     </div>
-
+                    <br/>
                     <div className="form-group">
                         <input type="submit" value="REGISTER" className="btn btn-primary" />
                     </div>
                 </form>
-            </div>
+            </div></div>
         )
     }
 }

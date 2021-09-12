@@ -170,7 +170,7 @@ export default class AddStaff extends Component {
 
                         <br />
                         <div className="form-group">
-                            <input type="submit" value="REGISTER EMPLOYEE" className="btn btn-primary" />
+                            <input className="registerEmpBtn" type="submit" value="REGISTER EMPLOYEE" className="btn btn-primary" />
                             <br />
                         </div>
                     </form>

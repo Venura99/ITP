@@ -119,7 +119,6 @@ export default class CalcSalary extends Component {
             <div className="calcSalaryPage">
                 <button className="viewAllSalaryBtn"><Link className="linkToViewSalary" to="/viewSalary">View All Salary Details</Link></button>
                 <button className="searchSalaryBtn"><Link className="linkToViewSalary" to="/searchSalary">Search Salary Details</Link></button>
-                <br />
                 <form onSubmit={this.onSubmit} className="container" id="calcForm">
                     <h3 className="calcSalaryTitle">EMPLOYEE SALARY CALCULATION</h3>
                     <br />
