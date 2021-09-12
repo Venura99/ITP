@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-//import '../FinanceManagement/financeManage.css';
+import '../FinanceManagement/financeManage.css';
 
 export default class CreateExpenses extends Component {
     constructor(props) {
@@ -67,9 +67,12 @@ export default class CreateExpenses extends Component {
     render() {
         return (
 
-            <div className='calcSalaryPage'>
-                <h3>ADD NEW EXPENSES</h3>
-                <form className='container' id='calcForm' onSubmit={this.onSubmit}>
+            <div className='background'>
+
+                <br /><br /><br /><br />
+
+                <form className='container' id='expForm' onSubmit={this.onSubmit}>
+                    <h3>ADD NEW EXPENSES</h3>
                     <div className="form-group">
                         <label>Expenses ID: </label>
                         <input type="text"
@@ -79,6 +82,7 @@ export default class CreateExpenses extends Component {
                             onChange={this.onChangeID}
                         />
                     </div>
+                    <br /><br />
                     <div className="form-group">
                         <label>Type: </label>
                         <input type="text"
@@ -88,6 +92,7 @@ export default class CreateExpenses extends Component {
                             onChange={this.onChangeType}
                         />
                     </div>
+                    <br /><br />
                     <div className="form-group">
                         <label>Department: </label>
                         <input type="text"
@@ -97,6 +102,7 @@ export default class CreateExpenses extends Component {
                             onChange={this.onChangeDepartment}
                         />
                     </div>
+                    <br /><br />
                     <div className="form-group">
                         <label>Value: </label>
                         <input
@@ -107,9 +113,9 @@ export default class CreateExpenses extends Component {
                         />
                     </div>
 
-
+                    <br /><br /><br />
                     <div className="form-group">
-                        <input type="submit" value="Add Expenses" className="searchStaffBtn" />
+                        <input type="submit" value="Add Expenses" id="createExpbtn" className="btn btn-primary" />
                     </div>
                 </form>
             </div>

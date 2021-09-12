@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const ManageContainer = styled.div`
+export const ManageRadiologyPatientContainer = styled.div`
     height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-
+    background: #e6ccff;
     @media screen and (max-width: 768px){
         height: 1100px;
     }
@@ -14,11 +14,11 @@ export const ManageContainer = styled.div`
         height: 1300px;
     }
 `
-export const ManageWrapper = styled.div`
-    max-width: 1300px;
+export const ManageRadiologyPatientWrapper = styled.div`
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
@@ -31,8 +31,8 @@ export const ManageWrapper = styled.div`
     }
 `
 
-export const ManageCard = styled.div`
-    background: #00008b;
+export const ManageRadiologyPatientCard = styled.div`
+    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -49,17 +49,14 @@ export const ManageCard = styled.div`
     }
 `
 
-
-export const ManageIcon = styled.img`
+export const ManageRadiologyPatientIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
 `
 
-export const ManageH1 = styled.h1`
+export const ManageRadiologyPatientH1 = styled.h1`
     font-size: 2.5rem;
-    -webkit-text-stroke: 0.8px rgb(219, 216, 216);
-    font-weight: bolder;
     color: black;
     margin-bottom: 32px;
     @media screen and (max-width: 400px) {
@@ -67,9 +64,8 @@ export const ManageH1 = styled.h1`
     }
 `
 
-export const ManageH2 = styled.h2`
-    font-size: 1.2rem;
+export const ManageRadiologyPatientH2 = styled.h2`
+    font-weight:bold,
+    font-size: 1rem;
     margin-bottom: 10px;
-    color: white;
-
 `

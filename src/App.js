@@ -69,6 +69,12 @@ import CreateExpenses from "./components/pages/create-expenses.component";
 import CreateIncome from "./components/pages/create-income.component";
 import calcExpenses from "./components/pages/calcExpenses";
 
+//Dulmi
+import ManageRadiologyPatient from './components/Radiology/manageRadiologyPatient';
+import AddRadiologyPatient from './components/pages/addRadiologyPatient';
+import ViewRadiologyPatient from './components/pages/viewRadiologyPatient';
+import EditRadiologyPatient from './components/pages/editRadiologyPatient';
+
 if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
@@ -139,6 +145,14 @@ function App() {
               <Route path="/expenses-list.component" component={ExpensesList} />
               <Route path="/income-list.component" component={IncomeList} />
               <Route path="/Calculations/calcExpenses" component={calcExpenses} />
+
+              <Route path='/manageRadiologyPatient' component={ManageRadiologyPatient} />
+              <Route path='/addRadiologyPatient' component={AddRadiologyPatient} />
+              <Route path='/viewRadiologyPatient' component={ViewRadiologyPatient} />
+              <Route path='/editRadiologyPatient/:id' component={EditRadiologyPatient} />
+
+
+
             </div>
           </Switch>
         </Router>

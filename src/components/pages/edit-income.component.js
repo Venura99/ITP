@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import '../FinanceManagement/financeManage.css';
 
 export default class EditIncome extends Component {
     constructor(props) {
@@ -64,15 +65,17 @@ export default class EditIncome extends Component {
         axios.post('http://localhost:5000/income/update/' + this.props.match.params.id, income)
             .then(res => console.log(res.data));
 
-        window.location = '/income-list.component';
+        window.location = '/';
     }
 
     render() {
         return (
-            <div>
-                <h3>Edit Income Details</h3>
-                <form onSubmit={this.onSubmit}>
+            <div className='viewInc'>
 
+                <br /> <br />   <br />   <br />   <br />   <br />
+
+                <form className='container' id='calcForm' onSubmit={this.onSubmit}>
+                    <h3>Edit Income Details</h3>
 
                     <div className="form-group">
                         <label>ID: </label>
@@ -83,7 +86,7 @@ export default class EditIncome extends Component {
                             onChange={this.onChangeID}
                         />
                     </div>
-
+                    <br />
                     <div className="form-group">
                         <label>Department: </label>
                         <input type="text"
@@ -93,6 +96,7 @@ export default class EditIncome extends Component {
                             onChange={this.onChangeDepartment}
                         />
                     </div>
+                    <br />
                     <div className="form-group">
                         <label>Value: </label>
                         <input
@@ -102,6 +106,7 @@ export default class EditIncome extends Component {
                             onChange={this.onChangeValue}
                         />
                     </div>
+                    <br />  <br />
 
                     <div className="form-group">
                         <input type="submit" value="Edit Income Details" className="btn btn-primary" />

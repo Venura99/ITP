@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import '../FinanceManagement/financeManage.css';
 
 export default class EditExpenses extends Component {
     constructor(props) {
@@ -75,14 +76,15 @@ export default class EditExpenses extends Component {
         axios.post('http://localhost:5000/expenses/update/' + this.props.match.params.id, expenses)
             .then(res => console.log(res.data));
 
-        window.location = '/expenses-list.component';
+        window.location = '/';
     }
 
     render() {
         return (
-            <div>
-                <h3>Edit Expenses Details</h3>
-                <form onSubmit={this.onSubmit}>
+            <div className='viewExp'>
+                <br /> <br />
+                <form className='container' id='calcForm' onSubmit={this.onSubmit}>
+                    <h3>Edit Expenses Details</h3>
 
                     <div className="form-group">
                         <label>Expenses ID: </label>
@@ -93,6 +95,7 @@ export default class EditExpenses extends Component {
                             onChange={this.onChangeID}
                         />
                     </div>
+                    <br />
                     <div className="form-group">
                         <label>Type: </label>
                         <input type="text"
@@ -102,6 +105,7 @@ export default class EditExpenses extends Component {
                             onChange={this.onChangeType}
                         />
                     </div>
+                    <br />
                     <div className="form-group">
                         <label>Department: </label>
                         <input type="text"
@@ -111,6 +115,7 @@ export default class EditExpenses extends Component {
                             onChange={this.onChangeDepartment}
                         />
                     </div>
+                    <br />
                     <div className="form-group">
                         <label>Value: </label>
                         <input
@@ -120,6 +125,7 @@ export default class EditExpenses extends Component {
                             onChange={this.onChangeValue}
                         />
                     </div>
+                    <br /><br />
 
                     <div className="form-group">
                         <input type="submit" value="Edit Expenses Details" className="btn btn-primary" />

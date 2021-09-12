@@ -36,12 +36,6 @@ export const SidebarData = [
         cName: 'nav-text'
     },
     {
-        title: 'Radiology and Imaging',
-        path: '/manageLab',
-        icon: <FaIcons.FaXRay />,
-        cName: 'nav-text'
-    },
-    {
         title: 'Covid-19 Vaccinations',
         path: '/CovidManage',
         icon: <GiIcons.GiLoveInjection />,
@@ -51,6 +45,12 @@ export const SidebarData = [
         title: 'Pharmacy',
         path: '/managePharmacy',
         icon: <AiIcons.AiFillMedicineBox />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Radiology and Imaging',
+        path: '/manageRadiologyPatient',
+        icon: <FaIcons.FaXRay />,
         cName: 'nav-text'
     },
     {

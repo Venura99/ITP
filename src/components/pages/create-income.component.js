@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import '../FinanceManagement/financeManage.css';
 
 
 export default class CreateIncome extends Component {
@@ -58,11 +58,12 @@ export default class CreateIncome extends Component {
 
     render() {
         return (
-            <div className='viewStaffPage'>
-                <h3>ADD NEW INCOME</h3>
-                <form className='container' id='calcForm'  onSubmit={this.onSubmit}>
+            <div className='createInc'>
+                <br /><br /><br /><br />
+                <form className='container' id='IncForm' onSubmit={this.onSubmit}>
+                    <h3>ADD NEW INCOME</h3>
 
-                <div className="form-group">
+                    <div className="form-group">
                         <label>ID: </label>
                         <input type="text"
                             required
@@ -71,6 +72,7 @@ export default class CreateIncome extends Component {
                             onChange={this.onChangeID}
                         />
                     </div>
+                    <br /><br />
 
                     <div className="form-group">
                         <label>Department: </label>
@@ -81,6 +83,7 @@ export default class CreateIncome extends Component {
                             onChange={this.onChangeDepartment}
                         />
                     </div>
+                    <br /><br />
                     <div className="form-group">
                         <label>Value: </label>
                         <input
@@ -90,10 +93,10 @@ export default class CreateIncome extends Component {
                             onChange={this.onChangeValue}
                         />
                     </div>
-                    
+                    <br /><br />
 
                     <div className="form-group">
-                        <input type="submit" value="ADD" className="btn btn-primary" />
+                        <input type="submit" value="ADD" id='createIncbtn' className="btn btn-primary" />
                     </div>
                 </form>
             </div>

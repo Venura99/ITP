@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-//import './financeManage.css';
+import './financeManage.css';
 import addExp from '../../images/expenses.jpg';
 import addInc from '../../images/income.jpg';
 import findExp from '../../images/findExp.jpg';
@@ -11,11 +11,17 @@ import { ManageContainer, ManageH1, ManageWrapper, ManageCard, ManageIcon, Manag
 
 function FinanceManage() {
     return (
-        <div className="manageStaff">
-            <h3>HOSPITAL FINANCE MANAGEMENT</h3>
+        <div className="backgroundfront">
+
+            <br />
+            <div className='frontText'>
+                <h3 >HOSPITAL FINANCE MANAGEMENT</h3>
+
+            </div>
 
             <ManageContainer id='manageexpenses'>
                 <ManageH1>Select task to continue</ManageH1>
+                <br />
                 <ManageWrapper>
                     <ManageCard>
                         <ManageH2>ADD NEW EXPENSES</ManageH2>
