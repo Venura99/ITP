@@ -1,16 +1,22 @@
 .addMedicineTitle{
 	color: black;
+	font-size: 50px;
+	text-align: center;
 	margin: 0;
 	height: 60px;
 }
 
 .viewMedicineTitle{
+	font-size: 50px;
+	text-align: center;
 	color: black;
 	margin: 0;
 	height: 60px;
 }
 
 .createPatientTitle{
+	font-size: 50px;
+	text-align: center;
 	color: black;
 	margin: 0;
 	height: 60px;
@@ -26,7 +32,7 @@
 #addMedicineForm{
 	max-width: 800px;
 	padding: 16px;
-	background-color: white;
+	background-color:#818181e3;
 }
 
 .viewMedicinePage{
@@ -40,7 +46,7 @@
 #viewMedicineForm{
 	max-width: 1200px;
   padding: 16px;
-  background-color: white;
+  background-color:rgb(221, 221, 127);
 }
 
 .editMedicinePage{
@@ -66,5 +72,5 @@
 #createPatientForm{
 	max-width: 800px;
 	padding: 16px;
-	background-color: white;
+	background-color:rgb(78, 132, 233);
 }

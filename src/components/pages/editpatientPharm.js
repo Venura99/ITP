@@ -106,7 +106,7 @@ export default class EditPatient extends Component {
     axios.post('http://localhost:5000/madicines/edit/' + this.props.match.params.id, exercise)
       .then(res => console.log(res.data));
 
-    window.location = '/manageStaff';
+    window.location = '/medicineList';
   }
 
   render() {

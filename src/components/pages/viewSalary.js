@@ -60,7 +60,7 @@ export default class ViewSalary extends Component {
             <div className='viewSalaryPage'>
                 <br />
                 <div className='container' id="viewSalaryForm">
-                    <h3>Staff Salary Details</h3>
+                    <h3 className="staffSalaryDetails">STAFF SALARY DETAILS</h3>
                     <table className="table">
                         <thead className="thead-light">
                             <tr>

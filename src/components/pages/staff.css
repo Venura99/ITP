@@ -1,6 +1,7 @@
 .staffManageTitle{
 	font-weight: bold;
 	color:black;
+	font-size: 50px;
 }
 
 .addStaffTitle{
@@ -28,6 +29,14 @@
 }
 
 .searchStaffTitle{
+	font-size: 50px;
+	text-align: center;
+	color: black;
+	margin: 0;
+	height: 60px;
+}
+
+.staffSalaryDetails{
 	font-size: 50px;
 	text-align: center;
 	color: black;
@@ -123,20 +132,18 @@
 }
 
 .viewSalaryPage{
-	background: url("https://www.ritchielawfirm.com/wp-content/uploads/2019/05/insurance-company-article.jpghtthttps://thumbs.dreamstime.com/b/salary-text-written-notebook-office-background-215042055.jpg") no-repeat center center fixed;
+	background: url("https://us.123rf.com/450wm/karandaev/karandaev1611/karandaev161100434/65841837-office-leather-desk-table-with-calculator-and-pen-top-view-with-copy-space.jpg?ver=6") no-repeat center center fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 #viewSalaryForm{
-	opacity: 0.95;
-	max-width: 1300px;
-	padding:40px;
+	max-width: 1240px;
+    background:rgb(54, 160, 149);
+    padding: 40px;
     margin: 0 auto;
     display: grid;
-	max-width: 850px;
-	background-color:rgb(12, 0, 117);
 }
 
 .addStaffPage{
@@ -214,3 +221,5 @@
 .staffDept{
 	width:180px;
 }
+
+

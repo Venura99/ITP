@@ -7,15 +7,11 @@ const Register = props => (
     <tr>
         <td>{props.register._id}</td>
         <td>{props.register.name}</td>
-        <td>{props.register.address}</td>
         <td>{props.register.age}</td>
         <td>{props.register.gender}</td>
         <td>{props.register.nic}</td>
         <td>{props.register.phone}</td>
-        <td>{props.register.email}</td>
-        <td>{props.register.username}</td>
-        <td>{props.register.password}</td>
-       
+
         <td>
             <Link to={"/editp/" + props.register._id}>edit</Link> | <a href="#" onClick={() => { props.deleteRegister(props.register._id) }}>delete</a>
         </td>
@@ -60,22 +56,19 @@ export default class Viewp extends Component {
     render() {
         return (
             <div className='addCovidPage' id="viewTable">
-            <br />
+                <br />
                 <h3 className="addcovid1Title">VACCINATED PATIENTS' LIST</h3>
                 <table className="table" id="displayTable">
                     <thead className="thead-light">
                         <tr id="tablist">
                             <th className="viewlist">Patient ID</th>
                             <th className="viewlist">Name</th>
-                            <th className="viewlist">Address</th>
                             <th className="viewlist">Age</th>
                             <th className="viewlist">Gender</th>
                             <th className="viewlist">NIC</th>
                             <th className="viewlist">Phone</th>
-                            <th className="viewlist">Email</th>
-                            <th className="viewlist">Username</th>
-                            <th className="viewlist">Password</th>
-                            
+                            <th className="viewlist">action</th>
+
                         </tr>
                     </thead>
                     <tbody>

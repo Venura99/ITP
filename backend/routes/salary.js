@@ -19,7 +19,7 @@ router.route('/add').post((req, res) => {
     const otPay = req.body.otPay;
     const chanellingFee = req.body.chanellingFee;
     const noOfAppointments = req.body.noOfAppointments;
-    const totalSalary = (basicSalary + (otHours * otPay) + (chanellingFee * noOfAppointments));
+    const totalSalary = (parseInt(basicSalary) + (otHours * otPay) + (chanellingFee * noOfAppointments));
 
     const newSalary = new Salary({
 
@@ -66,7 +66,7 @@ router.route('/update/:id').post((req, res) => {
             salary.otPay = req.body.otPay;
             salary.chanellingFee = req.body.chanellingFee;
             salary.noOfAppointments = req.body.noOfAppointments;
-            salary.totalSalary = ((basicSalary * noOfDays) + (chanellingFee * noOfAppointments));
+            salary.totalSalary = (parseInt(basicSalary) + (otHours * otPay) + (chanellingFee * noOfAppointments));
 
             salary.save()
                 .then(() => res.json('Salary entry updated.\n Total salary of employee: ' + totalSalary))

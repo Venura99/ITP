@@ -11,8 +11,8 @@ import { ManagePharmacyContainer, ManagePharmacyH1, ManagePharmacyWrapper, Manag
 function ManagePharmacy() {
     return (
         <div>
-            <h3 className="pharmacyTitle">HOSPITAL PHARMACY MANAGEMENT</h3>
             <ManagePharmacyContainer className="pharmacyPage" id='managePharmacy'>
+                <h3 className="pharmacyTitle">HOSPITAL PHARMACY MANAGEMENT</h3>
                 <ManagePharmacyH1>Select task to continue</ManagePharmacyH1>
                 <ManagePharmacyWrapper>
                     <ManagePharmacyCard>

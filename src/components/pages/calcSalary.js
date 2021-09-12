@@ -5,6 +5,7 @@ import DatePicker from "react-datepicker";
 import './staff.css';
 
 import "react-datepicker/dist/react-datepicker.css";
+import { number } from 'prop-types';
 
 export default class CalcSalary extends Component {
     constructor(props) {
@@ -153,17 +154,19 @@ export default class CalcSalary extends Component {
 
                     <br />
                     <div className="form-group">
-                        <label>Basic Salary:
-                            <select value={this.state.basicSalary}
-                                onChange={this.onChangeBasicSalary}>
-                                <option disabled>Doctor</option>
-                                <option value="7000">7000</option>
-                                <option disabled>Management Staff</option>
-                                <option value="4500">4500</option>
-                                <option disabled>Minor Staff</option>
-                                <option value="3500">3500</option>
-                            </select>
-                        </label>
+                        <label>Basic Salary:  </label>
+                        <select
+                            value={this.state.basicSalary}
+                            onChange={this.onChangeBasicSalary}>
+                            <option selected disabled value="">Select</option>
+                            <option disabled>Doctor</option>
+                            <option value="7000">7000</option>
+                            <option disabled>Management Staff</option>
+                            <option value="4500">4500</option>
+                            <option disabled>Minor Staff</option>
+                            <option value="3500">3500</option>
+                        </select>
+
                     </div>
                     <br />
                     <div className="form-group">
@@ -207,7 +210,7 @@ export default class CalcSalary extends Component {
                         <input
                             type="text"
                             className="form-control"
-                            value={parseInt((this.state.basicSalary) + (this.state.otHours * this.state.otPay) + (this.state.chanellingFee * this.state.noOfAppointments))}
+                            value={(parseInt(this.state.basicSalary * 1) + (this.state.otHours * this.state.otPay) + (this.state.chanellingFee * this.state.noOfAppointments))}
                             onClick={this.getTotal}
                         />
                     </div>

@@ -16,7 +16,6 @@ const Landing = ({ isAuthenticated }) => {
 
     return (
         <div>
-            <br /><br />
             <section className="landing">
                 <div className='homeServices'>
                     <br />

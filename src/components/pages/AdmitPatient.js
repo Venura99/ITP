@@ -240,7 +240,7 @@ export default class AdmitPatient extends Component {
               />
             </div><br></br><br></br>
 
-            <div className="form">
+            <div className="addPatientForm">
               <input type="submit" value="ADD PATIENT" className="btn btn-primary" id="badd" />
             </div>
           </div>
