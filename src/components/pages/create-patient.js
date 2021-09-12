@@ -155,6 +155,8 @@ export default class AddPatient extends Component {
         <br />
         <div className='container' id="createPatientForm">
           <form onSubmit={this.onSubmit}>
+            <h3 className="createPatientTitle">Add New Medicine</h3>
+            <br />
             <div className="form-group">
               <label>Customer Name: </label>
               <input type="text"

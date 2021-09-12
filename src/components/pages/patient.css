@@ -30,18 +30,21 @@
 
 }
 
-.form{
-    width: 60%;
+/*.addPatientform{
+    width: 70%;
     padding: 10px;
     margin: 0 auto;
     display: grid;
     max-width: 500px;  
-}
+}*/
 
 #badd{
     background-color: #071a52;
     border: none;
     color: white;
+    position: relative;
+    left:150px;
+    right:150px;
     height: 50px;
     width: 400px;
     text-align: center;
@@ -117,7 +120,6 @@
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-size: cover;
-    position: relative;
   
 }
 
@@ -175,16 +177,12 @@
     max-width: 800px;
 }
 
-p{
-    font-size: 30px;
-}
-
-table {
+#table {
     border-collapse: collapse;
-    width: 70%;
+    width: 500%;
 }
   
-table ,tr,td{
+#table ,tr,td{
     border: 1px solid #ddd;
     text-align: left;
 }

@@ -90,7 +90,13 @@ a {
 	background: #6cafa4;
 }
 
-.NavMain .navMain-links {
+.navMain-link1 {
+	display: flex;
+	list-style: none;
+	
+}
+
+.navMain-link2 {
 	display: flex;
 	list-style: none;
 }
@@ -208,6 +214,7 @@ a {
 
 .landingPara{
 	text-align: center;
+	font-size: 20px;
 }
 
 .landingButtons{

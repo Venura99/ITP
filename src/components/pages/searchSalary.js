@@ -16,7 +16,7 @@ function SearchSalary() {
 
     useEffect(() => {
         setFilteredData(
-            salary.filter((salary) => salary.date)
+            salary.filter((salary) => salary.name.toLowerCase().includes(search.toLowerCase()))
         )
     }, [search], salary)
 
@@ -26,7 +26,7 @@ function SearchSalary() {
             <br />
             <div className='container' id="searchSalaryForm">
                 <h3 className="searchSalaryTitle">SEARCH SALARY DETAILS</h3>
-                <h5>Enter employee name to view name and ID </h5>
+                <h5>Enter employee name to view salary details </h5>
                 <br />
                 <input className="searchBar" type="text" placeholder="Search..." onChange={(e) => {
                     setSearch(e.target.value);

@@ -6,9 +6,8 @@
     font-family: sans-serif;
 }
 .pharmacyTitle{
-    color:black;
+    color:rgb(255, 255, 255);
     margin: 0mm;
-    background-color: darkgray;
     display: flex;
     height: 10vh;
     justify-content: center;

@@ -32,6 +32,10 @@ const tfeeRouter = require('./routes/tfee');
 const labRouter = require('./routes/lab');
 const costRouter = require('./routes/cost');
 
+const calcExpRouter = require('./routes/calcExp');
+const incomeRouter = require('./routes/income');
+const expensesRouter = require('./routes/expenses');
+
 const madicinesRouter = require('./routes/madicines');
 const exercisesRouter = require('./routes/exercises');
 
@@ -49,6 +53,10 @@ app.use('/cost', costRouter);
 
 app.use('/register', registerRouter);
 app.use('/tfee', tfeeRouter);
+
+app.use('/calcExp', calcExpRouter);
+app.use('/income', incomeRouter);
+app.use('/expenses', expensesRouter);
 
 app.use('/madicines', madicinesRouter);
 app.use('/exercises', exercisesRouter);

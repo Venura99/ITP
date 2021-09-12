@@ -10,8 +10,9 @@ import { ManageStaffContainer, ManageStaffH1, ManageStaffWrapper, ManageStaffCar
 function ManageStaff() {
     return (
         <div >
-            <h3 className="staffManageTitle">HOSPITAL STAFF MANAGEMENT</h3>
+
             <ManageStaffContainer className="manageStaffPage">
+                <h3 className="staffManageTitle">HOSPITAL STAFF MANAGEMENT</h3>
                 <ManageStaffH1>Select task to continue</ManageStaffH1>
                 <ManageStaffWrapper>
                     <ManageStaffCard>
@@ -35,7 +36,7 @@ function ManageStaff() {
                     <ManageStaffCard>
                         <ManageStaffH2>GENERATE EMPLOYEE REPORT</ManageStaffH2>
                         <ManageStaffIcon src={generateEmp} />
-                        <h4><NavLink to='/empReport'>Continue</NavLink></h4>
+                        <h4><NavLink to='/viewStaff'>Continue</NavLink></h4>
 
                     </ManageStaffCard>
                 </ManageStaffWrapper>

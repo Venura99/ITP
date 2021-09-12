@@ -94,7 +94,7 @@ export default class ChargeCalculate extends Component {
         <form onSubmit={this.onSubmit}>
 
           <div className="form-calculation">
-            <h5 className= "patientCharge">PATIENT CHARGE CALCULATION</h5><br></br><br></br>
+            <h5 className="patientCharge">PATIENT CHARGE CALCULATION</h5><br></br><br></br>
             <label><b>Patient Name: </b></label>
             <input type="text"
               required

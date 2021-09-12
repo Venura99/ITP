@@ -24,7 +24,10 @@ const salarySchema = new Schema({
     basicSalary: {
         type: Number
     },
-    noOfDays: {
+    otHours: {
+        type: Number
+    },
+    otPay: {
         type: Number
     },
     chanellingFee: {

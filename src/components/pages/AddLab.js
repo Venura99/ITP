@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
-import './lab.css';
+//import './lab.css';
 
 export default class AddLab extends Component {
     constructor(props) {
@@ -91,7 +91,7 @@ export default class AddLab extends Component {
             .then(res => console.log(res.data));
 
         window.location = '/manageLab';
-        
+
     }
     render() {
         return (

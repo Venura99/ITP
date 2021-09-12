@@ -58,7 +58,7 @@ export const CovidManageIcon = styled.img`
 
 export const CovidManageH1 = styled.h1`
     font-size: 2.5rem;
-    color: black;
+    color: red;
     margin-bottom: 32px;
     @media screen and (max-width: 400px) {
         font-size: 2rem;

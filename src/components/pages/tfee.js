@@ -98,12 +98,13 @@ export default class Tfee extends Component{
             
 
     return(
-      
-        <div className='container'>
-        <h3>CALCULATE VACCINE FEE</h3>
+        <div className='calcovidPage'>
+        <br />
+        <div className='container' id="addRegisterForm">
+        <h3 className="addcovid3Title">CALCULATE VACCINE FEE</h3>
         <form onSubmit={this.onSubmit}>
         <div className="form-group">
-                        <label>Patient ID: </label>
+                        <label className="textColour">Patient ID: </label>
                         <input type="text"
                             required
                             className="form-control"
@@ -114,7 +115,7 @@ export default class Tfee extends Component{
              </div>           
 
             <div className="form-group">
-                <label>Patient Name: </label>
+                <label className="textColour">Patient Name: </label>
                 <input type="text"
                     required
                     className="form-control"
@@ -128,7 +129,7 @@ export default class Tfee extends Component{
 
 
             <div className="form-group">
-                        <label>Date: </label>
+                        <label className="textColour">Date: </label>
                         <div>
                             <DatePicker
                                 selected={this.state.date}
@@ -139,7 +140,7 @@ export default class Tfee extends Component{
 
             
 <div class="form-group">
-    <label for="validationCustom04" class="form-label">VaccineFee</label>
+    <label for="validationCustom04" class="form-label" className="textColour">VaccineFee</label>
     <select class="form-select" id="validationCustom04" required value={this.state.vaccineFee}  onChange={this.onChangeVaccineFee} >
     <option selected disabled value="">(Vaccine 1mg price Rs:)</option>
       <option selected disabled value="">Sputnik</option>
@@ -153,7 +154,7 @@ export default class Tfee extends Component{
        </select></div>
 
 <div class="form-group">
-    <label for="validationCustom04" class="form-label">DoseSize</label>
+    <label for="validationCustom04" class="form-label" className="textColour">DoseSize</label>
     <select class="form-select" id="validationCustom04" required value={this.state.doseSize}  onChange={this.onChangeDoseSize}>
       <option selected disabled value="">mg</option>
       <option>10</option>
@@ -165,7 +166,7 @@ export default class Tfee extends Component{
         <br/>   <br/>
 
     <div class="vac">
-    <label for="validationCustom04" class="form-label">Total VaccineFee</label> </div>
+    <label for="validationCustom04" class="form-label" className="textColour">Total VaccineFee</label> </div>
                     <div>
                         <input
                             type="text"
@@ -176,13 +177,13 @@ export default class Tfee extends Component{
     
 </div>
 <br/>
-<div className="btn1">
-                        <input type="submit" value="ADD ENTRY TO DATABASE" className="btn-primary" onClick={this.getTotal} />
+<div className="form-group">
+                        <input type="submit" value="ADD ENTRY TO DB" className="btn btn-primary" onClick={this.getTotal} />
                     </div>
                 </form>
                 
                 <br />
-            </div>
+            </div></div>
 
 
 )

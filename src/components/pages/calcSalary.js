@@ -5,6 +5,7 @@ import DatePicker from "react-datepicker";
 import './staff.css';
 
 import "react-datepicker/dist/react-datepicker.css";
+import { number } from 'prop-types';
 
 export default class CalcSalary extends Component {
     constructor(props) {
@@ -14,7 +15,8 @@ export default class CalcSalary extends Component {
         this.onChangeName = this.onChangeName.bind(this);
         this.onChangeDate = this.onChangeDate.bind(this);
         this.onChangeBasicSalary = this.onChangeBasicSalary.bind(this);
-        this.onChangeNoOfDays = this.onChangeNoOfDays.bind(this);
+        this.onChangeOTHours = this.onChangeOTHours.bind(this);
+        this.onChangeOTPay = this.onChangeOTPay.bind(this);
         this.onChangeChanellingFee = this.onChangeChanellingFee.bind(this);
         this.onChangeNoOfAppointments = this.onChangeNoOfAppointments.bind(this);
         this.onChangeTotalSalary = this.onChangeTotalSalary.bind(this);
@@ -25,7 +27,8 @@ export default class CalcSalary extends Component {
             name: '',
             date: new Date(),
             basicSalary: '',
-            noOfDays: '',
+            otHours: '',
+            otPay: '',
             chanellingFee: '',
             noOfAppointments: '',
             totalSalary: '',
@@ -56,9 +59,15 @@ export default class CalcSalary extends Component {
         });
     }
 
-    onChangeNoOfDays(e) {
+    onChangeOTHours(e) {
         this.setState({
-            noOfDays: e.target.value
+            otHours: e.target.value
+        });
+    }
+
+    onChangeOTPay(e) {
+        this.setState({
+            otPay: e.target.value
         });
     }
 
@@ -88,7 +97,8 @@ export default class CalcSalary extends Component {
             name: this.state.name,
             date: this.state.date,
             basicSalary: this.state.basicSalary,
-            noOfDays: this.state.noOfDays,
+            otHours: this.state.otHours,
+            otPay: this.state.otPay,
             chanellingFee: this.state.chanellingFee,
             noOfAppointments: this.state.noOfAppointments,
             totalSalary: this.state.totalSalary
@@ -108,10 +118,11 @@ export default class CalcSalary extends Component {
         return (
 
             <div className="calcSalaryPage">
-                <button className="viewAllSalaryBtn"><Link to="/viewSalary">View All Salary Details</Link></button>
-                <br />
+                <button className="viewAllSalaryBtn"><Link className="linkToViewSalary" to="/viewSalary">View All Salary Details</Link></button>
+                <button className="searchSalaryBtn"><Link className="linkToViewSalary" to="/searchSalary">Search Salary Details</Link></button>
                 <form onSubmit={this.onSubmit} className="container" id="calcForm">
                     <h3 className="calcSalaryTitle">EMPLOYEE SALARY CALCULATION</h3>
+                    <br />
                     <div className="form-group">
                         <label>Date: </label>
                         <div>
@@ -143,27 +154,37 @@ export default class CalcSalary extends Component {
 
                     <br />
                     <div className="form-group">
-                        <label>Basic Salary:
-                            <select value={this.state.basicSalary}
-                                onChange={this.onChangeBasicSalary}>
-                                <option disabled>Doctor</option>
-                                <option value="7000">7000</option>
-                                <option disabled>Management Staff</option>
-                                <option value="4500">4500</option>
-                                <option disabled>Minor Staff</option>
-                                <option value="3500">3500</option>
-                            </select>
-                        </label>
+                        <label>Basic Salary:  </label>
+                        <select
+                            value={this.state.basicSalary}
+                            onChange={this.onChangeBasicSalary}>
+                            <option selected disabled value="">Select</option>
+                            <option disabled>Doctor</option>
+                            <option value="7000">7000</option>
+                            <option disabled>Management Staff</option>
+                            <option value="4500">4500</option>
+                            <option disabled>Minor Staff</option>
+                            <option value="3500">3500</option>
+                        </select>
+
                     </div>
                     <br />
-
                     <div className="form-group">
-                        <label>Number of Days Worked: </label>
+                        <label>OT Hours: </label>
                         <input
                             type="text"
                             className="form-control"
-                            value={this.state.noOfDays}
-                            onChange={this.onChangeNoOfDays}
+                            value={this.state.otHours}
+                            onChange={this.onChangeOTHours}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label>OT Pay: </label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            value={this.state.otPay}
+                            onChange={this.onChangeOTPay}
                         />
                     </div>
                     <div className="form-group">
@@ -189,7 +210,7 @@ export default class CalcSalary extends Component {
                         <input
                             type="text"
                             className="form-control"
-                            value={((this.state.basicSalary * this.state.noOfDays) + (this.state.chanellingFee * this.state.noOfAppointments))}
+                            value={(parseInt(this.state.basicSalary * 1) + (this.state.otHours * this.state.otPay) + (this.state.chanellingFee * this.state.noOfAppointments))}
                             onClick={this.getTotal}
                         />
                     </div>

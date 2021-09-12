@@ -13,7 +13,12 @@ const staffSchema = new Schema({
     name: {
         type: String,
         required: true,
-        unique: true,
+        trim: true,
+
+    },
+    department: {
+        type: String,
+        required: true,
         trim: true,
 
     },
@@ -25,14 +30,12 @@ const staffSchema = new Schema({
     nic: {
         type: String,
         required: true,
-        minlength: 10,
         unique: true,
         trim: true,
     },
     phone: {
         type: Number,
         required: true,
-        minlength: 10,
         unique: true,
         trim: true,
     },
@@ -41,18 +44,7 @@ const staffSchema = new Schema({
         required: true,
         unique: true,
         trim: true,
-    },
-    username: {
-        type: String,
-        required: true,
-        trim: true,
-    },
-    password: {
-        type: String,
-        required: true,
-        unique: true,
-        trim: true,
-    },
+    }
 }, {
     timestamps: true,
 })
