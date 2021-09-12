@@ -39,6 +39,7 @@ const expensesRouter = require('./routes/expenses');
 const madicinesRouter = require('./routes/madicines');
 const exercisesRouter = require('./routes/exercises');
 
+const radiologyRouter = require('./routes/radiology');
 
 app.use('/staff', staffRouter);
 app.use('/salary', salaryRouter);
@@ -60,6 +61,8 @@ app.use('/expenses', expensesRouter);
 
 app.use('/madicines', madicinesRouter);
 app.use('/exercises', exercisesRouter);
+
+app.use('/radiology', radiologyRouter);
 
 app.use('/users', require('./routes/auth'));
 
