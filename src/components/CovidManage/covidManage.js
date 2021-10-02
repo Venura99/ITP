@@ -17,7 +17,7 @@ function CovidManage() {
 
                 <CovidManageContainer id='covidManage'>
                     <h3 className="covidB">COVID VACCINE MANAGEMENT</h3>
-
+                    <br/>
                     <CovidManageH1><h4 className="covidtext">Select task to continue</h4></CovidManageH1>
                     <CovidManageWrapper>
                         <CovidManageCard>
@@ -45,7 +45,7 @@ function CovidManage() {
                             <div className="covidManage1">
                                 <CovidManageH2>GENERATE PATIENTS' REPORT</CovidManageH2>
                                 <CovidManageIcon src={Generate} />
-                                <h4><NavLink to='/viewp'>Continue</NavLink></h4></div>
+                                <h4><NavLink to='/vaccineReport'>Continue</NavLink></h4></div>
 
                         </CovidManageCard>
 

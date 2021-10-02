@@ -37,7 +37,6 @@
 	color: rgb(85, 214, 247);
 	margin: 0;
 	height: 60px;
-    color: black;
     font-weight: bold;
 }
 
@@ -69,6 +68,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    min-height: 900px;
 }
 
 #addCovidPage{
@@ -76,6 +76,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    min-height: 900px;
 }
 
 .calcovidPage{
@@ -83,6 +84,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+    min-height: 1000px;
 }
 
 
@@ -130,3 +132,72 @@ th {
     color: rgb(80, 42, 35);
 }
 
+#searchRegisterVaccineForm{
+	max-width: 700px;
+	height:650px;
+	padding: 16px;
+	background-color: white;
+}
+ 
+#searchTfeeForm{
+	max-width: 700px;
+	height:600px;
+	padding: 16px;
+	background-color: white;
+}
+
+.repVBtn{
+    display: inline-block;
+    padding: 15px 255px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #fa1109;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    position:absolute;
+    left:26%;
+}
+
+.repVBtn:hover {background-color: #3e8e41}
+
+.repVBtn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+#viewVaccineForm{
+    max-width: 800px;
+    padding: 16px;
+    height: 880px;
+    background-color: rgba(98, 122, 138, 0.5);
+}
+
+.VaccineFeeDetails{
+    color: blanchedalmond;
+    -webkit-text-stroke: 0.8px rgba(0,0,0,.5);
+}
+
+#covidbar{
+  max-width: 10000px;
+    padding: 16px;
+    height: 800px;
+    background-color: rgba(98, 122, 138, 0.5);
+}
+
+.addcovid1Title{
+    color: blanchedalmond;
+    -webkit-text-stroke: 0.8px rgba(0,0,0,.5);
+}
+
+#covidbar2{
+    max-width: 10000px;
+      padding: 16px;
+      height: 700px;
+      background-color: rgba(98, 122, 138, 0.5);
+  }

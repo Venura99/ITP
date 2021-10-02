@@ -58,6 +58,9 @@ import Editp from "./components/pages/editp";
 import Viewp from "./components/pages/viewp";
 import CovidManage from "./components/CovidManage/covidManage";
 import ViewTfee from './components/pages/viewTfee';
+import searchVaccine from './components/pages/searchVaccine';
+import searchTfee from './components/pages/searchTfee';
+import vaccineReport from './components/pages/vaccineReport';
 
 //Pinidu
 import FinanceManage from "./components/FinanceManagement/financeManage";
@@ -136,6 +139,10 @@ function App() {
               <Route path="/viewp" component={Viewp} />
               <Route path="/covidManage" component={CovidManage} />
               <Route path="/viewTfee" component={ViewTfee} />
+              <Route path='/searchVaccine' component={searchVaccine} />
+              <Route path='/searchTfee' component={searchTfee} />
+              <Route path='/vaccineReport' component={vaccineReport} />
+
 
               <Route path='/financeManage' component={FinanceManage} />
               <Route path="/edit-expenses.component/:id" component={EditExpenses} />

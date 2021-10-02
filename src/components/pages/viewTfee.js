@@ -55,7 +55,10 @@ export default class ViewTfee extends Component {
     render() {
         return (
             <div id='addCovidPage' className='viewTfee'>
+                <br/>
                 <div className='container'>
+                <div  id='covidbar' >
+                <button className="searchStaffBtn"><Link className="toSearchPage" to="/searchTfee" >Search Vaccine details</Link></button>  
                     <h3 className="addcovid1Title">Patients' Vaccine Details</h3>
                     <table className="table">
                         <thead className="thead-light">
@@ -74,7 +77,7 @@ export default class ViewTfee extends Component {
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div></div>
         )
     }
 }

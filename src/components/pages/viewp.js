@@ -57,6 +57,9 @@ export default class Viewp extends Component {
         return (
             <div className='addCovidPage' id="viewTable">
                 <br />
+                <div className='container'>
+                <div  id='covidbar2' >  
+                <button className="searchStaffBtn"><Link className="toSearchPage" to="/searchVaccine" >Search Vaccine details</Link></button>    
                 <h3 className="addcovid1Title">VACCINATED PATIENTS' LIST</h3>
                 <table className="table" id="displayTable">
                     <thead className="thead-light">
@@ -75,7 +78,7 @@ export default class Viewp extends Component {
                         {this.registerMembersList()}
                     </tbody>
                 </table>
-            </div>
+            </div></div></div>
         )
     }
 }

@@ -184,6 +184,8 @@ export default class RegisterVaccine extends Component {
                         <label className="textColour">NIC: </label>
                         <input
                             type="text"
+                            maxLength="10"
+                            minLength="10"
                             className="form-control"
                             value={this.state.nic}
                             onChange={this.onChangeNIC}
@@ -194,6 +196,9 @@ export default class RegisterVaccine extends Component {
                         <label className="textColour">Phone: </label>
                         <input
                             type="text"
+                            pattern="[0-9]*"
+                            maxLength="10"
+                            minLength="10"
                             className="form-control"
                             value={this.state.phone}
                             onChange={this.onChangePhone}
