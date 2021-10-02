@@ -123,7 +123,7 @@ export default class RegisterVaccine extends Component {
     };
 
 
-    render() {
+    render() { 
 
         return (
             <div className='addCovidPage'>

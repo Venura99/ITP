@@ -26,7 +26,7 @@ export default class Editp extends Component {
             nic: '',
             phone: '',
             email: '',
-            username: '',
+            username: '', 
             password: ''
         }
     }

@@ -67,7 +67,7 @@ export default class pdfGenerator extends PureComponent{
                             </tr>
                         </thead>
                         <tbody>
-                            {this.tfeeDetailsList()}
+                            {this.tfeeDetailsList()} 
                         </tbody>
                     </table>
                     <br/>

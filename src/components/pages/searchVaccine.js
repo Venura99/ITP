@@ -41,7 +41,7 @@ function SearchBar() {
                         </tr>
                     </thead>
                     <tbody>
-                        {filteredData.map((val) => {
+                        {filteredData.map((val) => { 
                             return <div key={val.id}>
                                 <td>{val._id}</td>
                                 <td>{val.name}</td>

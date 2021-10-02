@@ -24,7 +24,7 @@ export default class Tfee extends Component{
           
             date: new Date(),
             vaccineFee: '',
-            doseSize: '',
+            doseSize: '', 
             totalFee: '',
         }
     }

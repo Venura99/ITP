@@ -27,7 +27,7 @@ router.route('/add').post((req, res) => {
         date,
         vaccineFee,
         doseSize,
-        totalFee
+        totalFee 
 
     });
 

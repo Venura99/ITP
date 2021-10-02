@@ -49,7 +49,7 @@ function CovidManage() {
 
                         </CovidManageCard>
 
-                    </CovidManageWrapper>
+                    </CovidManageWrapper> 
                 </CovidManageContainer>
 
 

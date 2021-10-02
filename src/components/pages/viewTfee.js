@@ -73,7 +73,7 @@ export default class ViewTfee extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                            {this.tfeeDetailsList()}
+                            {this.tfeeDetailsList()} 
                         </tbody>
                     </table>
                 </div>

@@ -36,4 +36,4 @@ const tfeeSchema = new Schema({
 
 const Tfee = mongoose.model("Tfee", tfeeSchema);
 
-module.exports = Tfee;
+module.exports = Tfee; 

@@ -55,7 +55,7 @@ export default class Viewp extends Component {
 
     render() {
         return (
-            <div className='addCovidPage' id="viewTable">
+            <div className='addCovidPage' id="viewTable"> 
                 <br />
                 <div className='container'>
                 <div  id='covidbar2' >  
